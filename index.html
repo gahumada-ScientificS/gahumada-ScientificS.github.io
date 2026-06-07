@@ -306,6 +306,89 @@
 
     .vm-card p + p { margin-top: 1rem; }
 
+    /* TEAM */
+    .team { background: var(--white); }
+
+    .team-card {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--off-white);
+      border-left: 3px solid var(--gold);
+      padding: 2.5rem;
+    }
+
+    .team-avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy) 0%, #243658 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .team-info h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.2rem;
+    }
+
+    .team-role {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-credentials {
+      font-size: 0.82rem;
+      color: var(--gray);
+      font-style: italic;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .team-bio {
+      font-size: 0.92rem;
+      color: var(--gray);
+      line-height: 1.85;
+    }
+
+    .team-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+    }
+
+    .team-tag {
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--navy);
+      padding: 0.3rem 0.8rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .team-card { grid-template-columns: 1fr; }
+      .team-avatar { margin: 0 auto; }
+    }
+
     /* SERVICES */
     .services { background: var(--navy); }
 
@@ -455,6 +538,7 @@
     <div class="nav-logo">MG <span>Scientific</span> Solutions</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#team">Our Team</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#industries">Industries</a></li>
       <li><a href="#contact" class="nav-cta">Contact Us</a></li>
@@ -518,6 +602,37 @@
           <p>MG Scientific Solutions empowers organizations by providing scientific consulting, process development, manufacturing support, quality systems expertise, and AI-driven solutions.</p>
           <p>We partner with companies across chemicals, ingredients, cosmetics, advanced materials, biotechnology, and life sciences to solve technical challenges, optimize processes, accelerate innovation, and enable successful product commercialization.</p>
           <p>Through integrity, expertise, collaboration, and continuous innovation, we help our clients move from concept to manufacturing with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-label">The People Behind The Science</div>
+      <h2 class="section-title">Who We Are</h2>
+      <div class="divider"></div>
+      <div class="team-card">
+        <div>
+          <div class="team-avatar">GA</div>
+        </div>
+        <div class="team-info">
+          <h3>Guillermo Ahumada, PhD</h3>
+          <div class="team-role">Co-Founder &amp; Principal Scientific Consultant</div>
+          <div class="team-credentials">Dual PhD in Chemistry — Université de Rennes 1 &amp; Pontificia Universidad Católica de Valparaíso &nbsp;|&nbsp; H-Index: 12 &nbsp;|&nbsp; 33 peer-reviewed publications</div>
+          <p class="team-bio">Guillermo brings over a decade of deep scientific expertise spanning organic chemistry, process development, advanced materials, electrochemistry, and nanotechnology. He has conducted research at world-class institutions across four continents — including IBS (South Korea), KTH Royal Institute of Technology (Sweden), and UT Austin — and currently serves as Director of R&amp;D at Mironova Labs, where he leads the full development lifecycle from concept through commercial-scale manufacturing for specialty chemical and cosmetic ingredient clients.<br/><br/>
+          His hands-on experience covers multi-step synthesis, scale-up from milligram to kilogram, CDMO management, QA/QC systems, DoE-driven process optimization, and analytical characterization (NMR, HPLC, GC-MS, and more). He combines classical scientific rigor with modern data science capabilities in Python and AI-driven approaches, enabling smarter, faster paths to product commercialization.</p>
+          <div class="team-tags">
+            <span class="team-tag">Organic Chemistry</span>
+            <span class="team-tag">Process Development</span>
+            <span class="team-tag">Scale-Up</span>
+            <span class="team-tag">Electrochemistry</span>
+            <span class="team-tag">CDMO Management</span>
+            <span class="team-tag">QA/QC</span>
+            <span class="team-tag">Advanced Materials</span>
+            <span class="team-tag">AI &amp; Data Science</span>
+          </div>
         </div>
       </div>
     </div>
