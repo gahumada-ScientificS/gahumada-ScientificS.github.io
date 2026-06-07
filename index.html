@@ -389,6 +389,97 @@
       .team-avatar { margin: 0 auto; }
     }
 
+    /* EXPERTISE */
+    .expertise { background: var(--navy); }
+    .expertise .section-title { color: var(--white); }
+    .expertise-intro { color: rgba(255,255,255,0.65); max-width: 600px; line-height: 1.8; margin-bottom: 3rem; font-size: 0.95rem; }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .expertise-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.2);
+      padding: 2rem;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .expertise-card:hover {
+      background: rgba(201,168,76,0.08);
+      border-color: var(--gold);
+    }
+
+    .expertise-card.wide {
+      grid-column: span 2;
+    }
+
+    .expertise-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .expertise-col-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .expertise-col-label:first-of-type { margin-top: 0; }
+
+    .expertise-list {
+      list-style: none;
+    }
+
+    .expertise-list li {
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.7);
+      padding: 0.25rem 0;
+      padding-left: 0.8rem;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .expertise-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.7rem;
+    }
+
+    .expertise-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .expertise-grid { grid-template-columns: 1fr 1fr; }
+      .expertise-card.wide { grid-column: span 2; }
+    }
+
+    @media (max-width: 600px) {
+      .expertise-grid { grid-template-columns: 1fr; }
+      .expertise-card.wide { grid-column: span 1; }
+      .expertise-two-col { grid-template-columns: 1fr; }
+    }
+
     /* SERVICES */
     .services { background: var(--navy); }
 
@@ -634,6 +725,135 @@
             <span class="team-tag">AI &amp; Data Science</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="expertise" id="expertise">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-label">Deep Domain Knowledge</div>
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="divider"></div>
+      <p class="expertise-intro">From bench-scale synthesis to commercial manufacturing, our expertise spans the full scientific and technical spectrum — grounded in real-world project experience across global research institutions and industry.</p>
+
+      <div class="expertise-grid">
+
+        <!-- Chemistry & Advanced Materials -->
+        <div class="expertise-card wide">
+          <h3>Chemistry &amp; Advanced Materials</h3>
+          <div class="expertise-two-col">
+            <div>
+              <div class="expertise-col-label">Representative Areas</div>
+              <ul class="expertise-list">
+                <li>Organometallic compounds</li>
+                <li>Metal-organic precursors</li>
+                <li>Specialty chemicals</li>
+                <li>Catalysts &amp; functional materials</li>
+                <li>Semiconductor materials</li>
+                <li>Cosmetic actives</li>
+                <li>Pharmaceutical intermediates</li>
+              </ul>
+            </div>
+            <div>
+              <div class="expertise-col-label">Representative Molecules &amp; Projects</div>
+              <ul class="expertise-list">
+                <li>TMHD metal complexes</li>
+                <li>Zirconium, yttrium, copper &amp; manganese precursors</li>
+                <li>ALD/CVD precursor development</li>
+                <li>Prostaglandin analogs &amp; Bimatoprost derivatives</li>
+                <li>Cloprostenol &amp; Misoprostol intermediates</li>
+                <li>Coupling reagents, peptides &amp; specialty ingredients</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Process Development -->
+        <div class="expertise-card">
+          <h3>Process Development &amp; Scale-Up</h3>
+          <div class="expertise-col-label">Capabilities</div>
+          <ul class="expertise-list">
+            <li>Route scouting</li>
+            <li>Process optimization</li>
+            <li>Impurity investigations</li>
+            <li>Technology transfer</li>
+            <li>Pilot-scale readiness</li>
+            <li>Manufacturing troubleshooting</li>
+          </ul>
+          <div class="expertise-col-label">Experience</div>
+          <ul class="expertise-list">
+            <li>Gram to kilogram scale-up</li>
+            <li>Cost reduction initiatives</li>
+            <li>Yield improvement programs</li>
+            <li>Process robustness evaluations</li>
+          </ul>
+        </div>
+
+        <!-- Analytical Sciences -->
+        <div class="expertise-card">
+          <h3>Analytical Sciences</h3>
+          <div class="expertise-col-label">Techniques</div>
+          <ul class="expertise-list">
+            <li>HPLC / UHPLC &amp; GC-MS</li>
+            <li>LC-MS &amp; ICP-MS</li>
+            <li>FTIR &amp; NMR</li>
+            <li>KF Titration</li>
+            <li>TGA / DSC</li>
+            <li>Elemental Analysis (CHNS)</li>
+          </ul>
+          <div class="expertise-col-label">Applications</div>
+          <ul class="expertise-list">
+            <li>Method development</li>
+            <li>Purity &amp; residual solvent analysis</li>
+            <li>Stability studies</li>
+            <li>Root cause investigations</li>
+          </ul>
+        </div>
+
+        <!-- Formulation -->
+        <div class="expertise-card">
+          <h3>Formulation &amp; Ingredient Solutions</h3>
+          <div class="expertise-col-label">Industries</div>
+          <ul class="expertise-list">
+            <li>Cosmetics &amp; Personal Care</li>
+            <li>Life Sciences</li>
+            <li>Specialty Chemicals</li>
+            <li>Advanced Materials</li>
+          </ul>
+          <div class="expertise-col-label">Expertise</div>
+          <ul class="expertise-list">
+            <li>Solubility &amp; compatibility assessments</li>
+            <li>Formulation optimization</li>
+            <li>Ingredient replacement strategies</li>
+            <li>Stability evaluations</li>
+            <li>Supplier qualification</li>
+          </ul>
+        </div>
+
+        <!-- AI for Science -->
+        <div class="expertise-card wide">
+          <h3>Artificial Intelligence for Science</h3>
+          <div class="expertise-two-col">
+            <div>
+              <div class="expertise-col-label">Applications</div>
+              <ul class="expertise-list">
+                <li>Scientific knowledge management</li>
+                <li>Literature review acceleration</li>
+                <li>Technical documentation generation</li>
+              </ul>
+            </div>
+            <div>
+              <div class="expertise-col-label">&nbsp;</div>
+              <ul class="expertise-list">
+                <li>R&amp;D workflow optimization</li>
+                <li>Laboratory productivity enhancement</li>
+                <li>AI adoption and training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
