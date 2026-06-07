@@ -420,3 +420,94 @@ footer p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
   .expertise-two-col { grid-template-columns: 1fr; }
   footer { flex-direction: column; text-align: center; }
 }
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+/* 1. Fade up on scroll */
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up.delay-1 { transition-delay: 0.1s; }
+.fade-up.delay-2 { transition-delay: 0.2s; }
+.fade-up.delay-3 { transition-delay: 0.3s; }
+.fade-up.delay-4 { transition-delay: 0.4s; }
+
+/* 2. Word cycling */
+#cycling-words {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  display: inline-block;
+}
+
+/* 3. Particle canvas */
+#particle-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 4. Gold shimmer on logo */
+@keyframes shimmerSweep {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.nav-logo.shimmer-active {
+  background: linear-gradient(90deg, #fff 30%, #C9A84C 45%, #fff2c2 50%, #C9A84C 55%, #fff 70%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerSweep 0.8s linear;
+}
+
+/* 5. Divider shimmer animation */
+@keyframes dividerShimmer {
+  0%   { background-position: -100% center; }
+  100% { background-position: 200% center; }
+}
+.divider {
+  background: linear-gradient(90deg, var(--gold), #fff0a0, var(--gold), var(--gold));
+  background-size: 200% auto;
+  animation: dividerShimmer 2.5s linear infinite;
+}
+
+/* 6. SVG map path draw */
+.map-continent {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  transition: stroke-dashoffset 2s ease forwards;
+}
+.map-continent.draw { stroke-dashoffset: 0; }
+
+/* 7. Pillar card stagger */
+.pillar-card { transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.pillar-card:hover { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold), 0 16px 40px rgba(201,168,76,0.15); }
+
+/* 8. Service card glow */
+.service-card { transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s; }
+.service-card:hover { box-shadow: 0 0 20px rgba(201,168,76,0.15); transform: translateY(-3px); }
+
+/* 9. Gold pulse on section labels */
+@keyframes labelPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.section-label { animation: labelPulse 3s ease-in-out infinite; }
+
+/* 10. Hero content entrance */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-badge  { animation: heroFadeIn 0.8s ease 0.2s both; }
+.hero h1     { animation: heroFadeIn 0.8s ease 0.4s both; }
+.hero-tagline{ animation: heroFadeIn 0.8s ease 0.6s both; }
+.hero p      { animation: heroFadeIn 0.8s ease 0.8s both; }
+.hero-buttons{ animation: heroFadeIn 0.8s ease 1.0s both; }
+.cycling-wrap{ animation: heroFadeIn 0.8s ease 1.1s both; }
