@@ -719,38 +719,100 @@
   </section>
 
   <!-- GLOBAL PRESENCE -->
-  <section style="background:var(--navy-dark); padding:4rem 6%; text-align:center;">
-    <div style="max-width:1100px; margin:0 auto;">
+  <section style="background:var(--navy-dark); padding:5rem 6%; text-align:center; position:relative; overflow:hidden;">
+
+    <!-- SVG World Map Background -->
+    <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.13;pointer-events:none;">
+      <style>
+        @keyframes pulse {
+          0%,100% { r: 5; opacity:1; }
+          50% { r: 10; opacity:0.4; }
+        }
+        @keyframes pulseRing {
+          0% { r: 6; opacity:0.8; }
+          100% { r: 22; opacity:0; }
+        }
+        .dot { fill:#C9A84C; animation: pulse 2.5s ease-in-out infinite; }
+        .ring { fill:none; stroke:#C9A84C; stroke-width:1.5; animation: pulseRing 2.5s ease-out infinite; }
+        .dot2 { animation-delay:0.5s; }
+        .dot3 { animation-delay:1s; }
+        .dot4 { animation-delay:1.5s; }
+        .dot5 { animation-delay:0.8s; }
+        .dot6 { animation-delay:1.2s; }
+        .ring2 { animation-delay:0.5s; }
+        .ring3 { animation-delay:1s; }
+        .ring4 { animation-delay:1.5s; }
+        .ring5 { animation-delay:0.8s; }
+        .ring6 { animation-delay:1.2s; }
+      </style>
+
+      <!-- North America -->
+      <path d="M95,88 L132,76 L175,72 L212,80 L245,92 L268,108 L278,132 L274,158 L262,178 L248,198 L232,220 L215,242 L198,260 L178,272 L158,265 L140,248 L125,228 L110,205 L98,178 L90,150 L88,120 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- Greenland -->
+      <path d="M292,55 L318,48 L345,52 L358,66 L352,82 L332,92 L308,90 L292,76 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- South America -->
+      <path d="M215,278 L245,268 L272,272 L292,295 L302,325 L305,360 L298,395 L280,425 L256,445 L232,445 L210,428 L200,398 L196,362 L200,328 L208,302 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- Europe -->
+      <path d="M442,96 L465,89 L488,88 L510,92 L528,104 L530,122 L522,140 L508,154 L488,162 L465,160 L448,148 L438,132 L438,114 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- Africa -->
+      <path d="M448,188 L495,180 L535,184 L556,200 L562,228 L560,268 L555,308 L546,348 L528,385 L505,415 L480,425 L455,415 L438,388 L430,348 L428,305 L432,262 L438,225 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- Asia -->
+      <path d="M532,88 L585,76 L645,65 L708,63 L768,68 L820,78 L862,95 L892,118 L898,145 L882,170 L852,190 L818,208 L778,220 L738,225 L698,218 L658,212 L618,208 L578,198 L545,182 L530,162 L526,135 L528,110 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- Southeast Asia islands (simplified) -->
+      <ellipse cx="768" cy="268" rx="28" ry="18" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <ellipse cx="820" cy="280" rx="22" ry="14" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+      <!-- Australia -->
+      <path d="M742,340 L782,328 L825,332 L852,348 L865,375 L860,405 L840,428 L808,438 L772,435 L748,415 L736,388 L736,360 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
+
+      <!-- GOLD LOCATION DOTS with pulse rings -->
+      <!-- New Jersey, USA -->
+      <circle class="ring ring1" cx="218" cy="162" r="6"/>
+      <circle class="dot dot1" cx="218" cy="162" r="5"/>
+      <!-- Austin, Texas -->
+      <circle class="ring ring2" cx="196" cy="182" r="6"/>
+      <circle class="dot dot2" cx="196" cy="182" r="5"/>
+      <!-- Valparaíso, Chile -->
+      <circle class="ring ring3" cx="228" cy="358" r="6"/>
+      <circle class="dot dot3" cx="228" cy="358" r="5"/>
+      <!-- Rennes, France -->
+      <circle class="ring ring4" cx="458" cy="132" r="6"/>
+      <circle class="dot dot4" cx="458" cy="132" r="5"/>
+      <!-- Stockholm, Sweden -->
+      <circle class="ring ring5" cx="490" cy="105" r="6"/>
+      <circle class="dot dot5" cx="490" cy="105" r="5"/>
+      <!-- Ulsan, South Korea -->
+      <circle class="ring ring6" cx="778" cy="168" r="6"/>
+      <circle class="dot dot6" cx="778" cy="168" r="5"/>
+    </svg>
+
+    <!-- Content -->
+    <div style="position:relative; z-index:1; max-width:1100px; margin:0 auto;">
       <div style="font-size:0.72rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:1rem;">Scientific Expertise Without Borders</div>
       <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:700; color:var(--white); margin-bottom:1rem;">Research &amp; Industry Experience Across<br/>Four Continents</h2>
       <p style="color:rgba(255,255,255,0.55); font-size:0.92rem; max-width:560px; margin:0 auto 3rem; line-height:1.8;">Our founders have lived, researched, and delivered results in North America, South America, Europe, and Asia — bringing a truly global scientific perspective to every engagement.</p>
 
-      <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:0; border:1px solid rgba(201,168,76,0.2); max-width:900px; margin:0 auto;">
-
-        <div style="flex:1; min-width:180px; padding:2rem 1.5rem; border-right:1px solid rgba(201,168,76,0.2); position:relative;">
-          <div style="font-size:2rem; margin-bottom:0.5rem;">🇺🇸</div>
+      <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:0; border:1px solid rgba(201,168,76,0.2); max-width:900px; margin:0 auto; background:rgba(17,29,51,0.7); backdrop-filter:blur(4px);">
+        <div style="flex:1; min-width:180px; padding:2rem 1.5rem; border-right:1px solid rgba(201,168,76,0.2);">
+          <div style="font-size:1.8rem; margin-bottom:0.5rem;">🇺🇸</div>
           <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:0.3rem;">North America</div>
-          <div style="font-size:0.78rem; color:var(--gold); letter-spacing:0.05em;">New Jersey, USA<br/>Austin, Texas, USA</div>
+          <div style="font-size:0.78rem; color:var(--gold);">New Jersey · Austin TX</div>
         </div>
-
         <div style="flex:1; min-width:180px; padding:2rem 1.5rem; border-right:1px solid rgba(201,168,76,0.2);">
-          <div style="font-size:2rem; margin-bottom:0.5rem;">🇨🇱</div>
+          <div style="font-size:1.8rem; margin-bottom:0.5rem;">🇨🇱</div>
           <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:0.3rem;">South America</div>
-          <div style="font-size:0.78rem; color:var(--gold); letter-spacing:0.05em;">Valparaíso, Chile</div>
+          <div style="font-size:0.78rem; color:var(--gold);">Valparaíso, Chile</div>
         </div>
-
         <div style="flex:1; min-width:180px; padding:2rem 1.5rem; border-right:1px solid rgba(201,168,76,0.2);">
-          <div style="font-size:2rem; margin-bottom:0.5rem;">🇸🇪🇫🇷</div>
+          <div style="font-size:1.8rem; margin-bottom:0.5rem;">🇸🇪🇫🇷</div>
           <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:0.3rem;">Europe</div>
-          <div style="font-size:0.78rem; color:var(--gold); letter-spacing:0.05em;">Stockholm, Sweden<br/>Rennes, France</div>
+          <div style="font-size:0.78rem; color:var(--gold);">Stockholm · Rennes</div>
         </div>
-
         <div style="flex:1; min-width:180px; padding:2rem 1.5rem;">
-          <div style="font-size:2rem; margin-bottom:0.5rem;">🇰🇷</div>
+          <div style="font-size:1.8rem; margin-bottom:0.5rem;">🇰🇷</div>
           <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:0.3rem;">Asia</div>
-          <div style="font-size:0.78rem; color:var(--gold); letter-spacing:0.05em;">Ulsan, South Korea</div>
+          <div style="font-size:0.78rem; color:var(--gold);">Ulsan, South Korea</div>
         </div>
-
       </div>
 
       <div style="display:flex; justify-content:center; gap:3rem; margin-top:3rem; flex-wrap:wrap;">
