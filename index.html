@@ -9,20 +9,12 @@
   <meta name="author" content="MG Scientific Solutions" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://mgscientificsolutions.com" />
-
-  <!-- Open Graph (LinkedIn, Facebook, WhatsApp previews) -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mgscientificsolutions.com" />
   <meta property="og:title" content="MG Scientific Solutions | Scientific Consulting & Process Development" />
-  <meta property="og:description" content="Your independent scientific partner — from concept to commercialization. Expert consulting in process development, CDMO oversight, quality systems, and AI-driven innovation." />
+  <meta property="og:description" content="Your independent scientific partner — from concept to commercialization." />
   <meta property="og:site_name" content="MG Scientific Solutions" />
-
-  <!-- Twitter/X Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MG Scientific Solutions | Scientific Consulting" />
-  <meta name="twitter:description" content="Independent scientific consulting firm — process development, CDMO oversight, quality systems, and AI for science. Science. Solutions. Impact." />
-
-  <!-- Schema.org structured data for Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,116 +22,14 @@
     "name": "MG Scientific Solutions",
     "url": "https://mgscientificsolutions.com",
     "email": "info@mgscientificsolutions.com",
-    "description": "Independent scientific consulting firm specializing in process development, CDMO technical oversight, quality systems, advanced materials, and AI-driven innovation for chemistry, biotech, cosmetics, and life sciences organizations.",
+    "description": "Independent scientific consulting firm specializing in process development, CDMO technical oversight, quality systems, advanced materials, and AI-driven innovation.",
     "slogan": "Science. Solutions. Impact.",
-    "areaServed": "Worldwide",
-    "knowsAbout": [
-      "Scientific Consulting",
-      "Process Development",
-      "CDMO Oversight",
-      "Quality Systems",
-      "GMP Compliance",
-      "Advanced Materials",
-      "Specialty Chemicals",
-      "Pharmaceutical Intermediates",
-      "Cosmetic Ingredients",
-      "Biotechnology",
-      "Life Sciences",
-      "AI for Science",
-      "Manufacturing Scale-Up"
-    ],
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Guillermo Ahumada",
-        "jobTitle": "Co-Founder & Principal Scientific Consultant"
-      },
-      {
-        "@type": "Person",
-        "name": "Magdalena Borkowska",
-        "jobTitle": "Co-Founder & Head of Quality & Regulatory Affairs"
-      }
-    ]
+    "areaServed": "Worldwide"
   }
   </script>
-
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --gold: #C9A84C;
-      --gold-light: #e0c06e;
-      --navy: #1B2A4A;
-      --navy-dark: #111d33;
-      --white: #ffffff;
-      --off-white: #f8f7f4;
-      --gray: #6b7280;
-      --light-gray: #e5e7eb;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--navy);
-      background: var(--white);
-    }
-
-    /* NAV */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.2rem 6%;
-      background: rgba(27, 42, 74, 0.97);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-    }
-
-    .nav-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: 0.05em;
-    }
-
-    .nav-logo span { color: var(--gold); }
-
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: rgba(255,255,255,0.8);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--gold); }
-
-    .nav-cta {
-      background: var(--gold);
-      color: var(--navy) !important;
-      padding: 0.55rem 1.4rem;
-      border-radius: 2px;
-      font-weight: 600 !important;
-      transition: background 0.2s !important;
-    }
-
-    .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
-
-    /* HERO */
     .hero {
       min-height: 100vh;
       background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, #243658 100%);
@@ -151,7 +41,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
       position: absolute;
@@ -161,7 +50,6 @@
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
     }
-
     .hero::after {
       content: '';
       position: absolute;
@@ -171,9 +59,7 @@
       top: 50%; left: 50%;
       transform: translate(-50%, -50%);
     }
-
     .hero-content { position: relative; z-index: 1; max-width: 820px; }
-
     .hero-badge {
       display: inline-block;
       border: 1px solid var(--gold);
@@ -185,7 +71,6 @@
       border-radius: 2px;
       margin-bottom: 2rem;
     }
-
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(2.8rem, 6vw, 5rem);
@@ -194,666 +79,147 @@
       line-height: 1.1;
       margin-bottom: 1rem;
     }
-
     .hero h1 span { color: var(--gold); }
-
     .hero-tagline {
       font-size: 1rem;
       letter-spacing: 0.35em;
       text-transform: uppercase;
       color: var(--gold);
       margin-bottom: 1.8rem;
-      font-weight: 400;
     }
-
-    .hero p {
-      color: rgba(255,255,255,0.7);
-      font-size: 1.05rem;
-      line-height: 1.8;
-      max-width: 600px;
-      margin: 0 auto 2.5rem;
-    }
-
+    .hero p { color: rgba(255,255,255,0.7); font-size: 1.05rem; line-height: 1.8; max-width: 600px; margin: 0 auto 2.5rem; }
     .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-    .btn-primary {
-      background: var(--gold);
-      color: var(--navy);
-      padding: 0.9rem 2.2rem;
-      border: none;
-      border-radius: 2px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.2s;
-      cursor: pointer;
-    }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1100px; margin: 0 auto 4rem; }
+    .pain-box { background: var(--navy); padding: 2.5rem; border-left: 3px solid var(--gold); }
+    .featured-services { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1100px; margin: 0 auto; }
+    .fs-card { background: var(--white); border: 1px solid var(--light-gray); border-top: 3px solid var(--gold); padding: 2.5rem; }
+    .fs-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: var(--navy); margin-bottom: 0.8rem; }
+    .fs-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.8rem; }
+    .fs-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.7; margin-bottom: 1.5rem; }
+    .fs-list { list-style: none; }
+    .fs-list li { font-size: 0.84rem; color: var(--gray); padding: 0.3rem 0 0.3rem 1rem; position: relative; }
+    .fs-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
 
-    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      padding: 0.9rem 2.2rem;
-      border: 1px solid rgba(255,255,255,0.4);
-      border-radius: 2px;
-      font-weight: 500;
-      font-size: 0.9rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: border-color 0.2s, color 0.2s;
-    }
-
-    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-
-    /* PILLARS */
-    .pillars {
-      background: var(--off-white);
-      padding: 5rem 6%;
-    }
-
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .pillar-card {
-      background: var(--white);
-      border: 1px solid var(--light-gray);
-      border-top: 3px solid var(--gold);
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .pillar-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(27,42,74,0.1); }
-
-    .pillar-icon {
-      width: 52px; height: 52px;
-      background: rgba(201,168,76,0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.2rem;
-      font-size: 1.4rem;
-    }
-
-    .pillar-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--navy);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 0.6rem;
-    }
-
-    .pillar-card p {
-      font-size: 0.85rem;
-      color: var(--gray);
-      line-height: 1.6;
-    }
-
-    /* SECTION COMMON */
-    section { padding: 6rem 6%; }
-
-    .section-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      margin-bottom: 0.8rem;
-    }
-
-    .section-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
-    }
-
-    .divider {
-      width: 50px;
-      height: 2px;
-      background: var(--gold);
-      margin-bottom: 1.5rem;
-    }
-
-    /* VISION & MISSION */
-    .vision-mission {
-      background: var(--white);
-    }
-
-    .vm-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      align-items: start;
-    }
-
-    .vm-card {
-      padding: 2.5rem;
-      border-left: 3px solid var(--gold);
-      background: var(--off-white);
-    }
-
-    .vm-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 1rem;
-    }
-
-    .vm-card p {
-      color: var(--gray);
-      font-size: 0.95rem;
-      line-height: 1.9;
-    }
-
-    .vm-card p + p { margin-top: 1rem; }
-
-    /* TEAM */
-    .team { background: var(--white); }
-
-    .team-card {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 3rem;
-      max-width: 1000px;
-      margin: 0 auto;
-      background: var(--off-white);
-      border-left: 3px solid var(--gold);
-      padding: 2.5rem;
-    }
-
-    .team-avatar {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--navy) 0%, #243658 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 3.5rem;
-      font-weight: 700;
-      color: var(--gold);
-      flex-shrink: 0;
-    }
-
-    .team-info h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 0.2rem;
-    }
-
-    .team-role {
-      font-size: 0.8rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-
-    .team-credentials {
-      font-size: 0.82rem;
-      color: var(--gray);
-      font-style: italic;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--light-gray);
-    }
-
-    .team-bio {
-      font-size: 0.92rem;
-      color: var(--gray);
-      line-height: 1.85;
-    }
-
-    .team-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1.2rem;
-    }
-
-    .team-tag {
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.3);
-      color: var(--navy);
-      padding: 0.3rem 0.8rem;
-      font-size: 0.75rem;
-      font-weight: 500;
-      border-radius: 2px;
-    }
+    @keyframes pulse { 0%,100% { r: 5; opacity:1; } 50% { r: 10; opacity:0.4; } }
+    @keyframes pulseRing { 0% { r: 6; opacity:0.8; } 100% { r: 22; opacity:0; } }
+    .dot { fill:#C9A84C; animation: pulse 2.5s ease-in-out infinite; }
+    .ring { fill:none; stroke:#C9A84C; stroke-width:1.5; animation: pulseRing 2.5s ease-out infinite; }
 
     @media (max-width: 768px) {
-      .team-card { grid-template-columns: 1fr; }
-      .team-avatar { margin: 0 auto; }
-    }
-
-    /* EXPERTISE */
-    .expertise { background: var(--navy); }
-    .expertise .section-title { color: var(--white); }
-    .expertise-intro { color: rgba(255,255,255,0.65); max-width: 600px; line-height: 1.8; margin-bottom: 3rem; font-size: 0.95rem; }
-
-    .expertise-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .expertise-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(201,168,76,0.2);
-      padding: 2rem;
-      transition: background 0.2s, border-color 0.2s;
-    }
-
-    .expertise-card:hover {
-      background: rgba(201,168,76,0.08);
-      border-color: var(--gold);
-    }
-
-    .expertise-card.wide {
-      grid-column: span 2;
-    }
-
-    .expertise-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.15rem;
-      color: var(--gold);
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 1.2rem;
-      padding-bottom: 0.8rem;
-      border-bottom: 1px solid rgba(201,168,76,0.2);
-    }
-
-    .expertise-col-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .expertise-col-label:first-of-type { margin-top: 0; }
-
-    .expertise-list {
-      list-style: none;
-    }
-
-    .expertise-list li {
-      font-size: 0.84rem;
-      color: rgba(255,255,255,0.7);
-      padding: 0.25rem 0;
-      padding-left: 0.8rem;
-      position: relative;
-      line-height: 1.5;
-    }
-
-    .expertise-list li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-      font-size: 0.7rem;
-    }
-
-    .expertise-two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-
-    @media (max-width: 900px) {
-      .expertise-grid { grid-template-columns: 1fr 1fr; }
-      .expertise-card.wide { grid-column: span 2; }
-    }
-
-    @media (max-width: 600px) {
-      .expertise-grid { grid-template-columns: 1fr; }
-      .expertise-card.wide { grid-column: span 1; }
-      .expertise-two-col { grid-template-columns: 1fr; }
-    }
-
-    /* SERVICES */
-    .services { background: var(--navy); }
-
-    .services .section-title { color: var(--white); }
-
-    .services-intro { color: rgba(255,255,255,0.65); max-width: 600px; line-height: 1.8; margin-bottom: 3rem; font-size: 0.95rem; }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .service-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(201,168,76,0.2);
-      padding: 2rem;
-      transition: background 0.2s, border-color 0.2s;
-    }
-
-    .service-card:hover {
-      background: rgba(201,168,76,0.08);
-      border-color: var(--gold);
-    }
-
-    .service-num {
-      font-size: 0.7rem;
-      color: var(--gold);
-      letter-spacing: 0.2em;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .service-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
-      color: var(--white);
-      font-weight: 600;
-      margin-bottom: 0.8rem;
-    }
-
-    .service-card p {
-      font-size: 0.87rem;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.7;
-    }
-
-    /* INDUSTRIES */
-    .industries { background: var(--off-white); }
-
-    .industries-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      max-width: 900px;
-      margin-top: 2rem;
-    }
-
-    .industry-tag {
-      background: var(--white);
-      border: 1px solid var(--light-gray);
-      color: var(--navy);
-      padding: 0.6rem 1.4rem;
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      border-radius: 2px;
-      transition: border-color 0.2s, color 0.2s;
-    }
-
-    .industry-tag:hover { border-color: var(--gold); color: var(--gold); }
-
-    /* CONTACT */
-    .contact { background: var(--navy-dark); text-align: center; }
-
-    .contact .section-title { color: var(--white); }
-    .contact .divider { margin: 0 auto 1.5rem; }
-
-    .contact p {
-      color: rgba(255,255,255,0.65);
-      font-size: 1rem;
-      line-height: 1.8;
-      max-width: 520px;
-      margin: 0 auto 2.5rem;
-    }
-
-    .contact-email {
-      display: inline-block;
-      color: var(--gold);
-      font-size: 1.1rem;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(201,168,76,0.4);
-      padding-bottom: 2px;
-      margin-bottom: 2.5rem;
-      transition: border-color 0.2s;
-    }
-
-    .contact-email:hover { border-color: var(--gold); }
-
-    /* FOOTER */
-    footer {
-      background: var(--navy-dark);
-      border-top: 1px solid rgba(201,168,76,0.15);
-      padding: 2rem 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--white);
-    }
-
-    .footer-logo span { color: var(--gold); }
-
-    footer p {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.4);
-    }
-
-    .footer-tagline {
-      font-size: 0.75rem;
-      color: var(--gold);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .pillars-grid { grid-template-columns: repeat(2, 1fr); }
-      .vm-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .services-grid { grid-template-columns: 1fr; }
-      footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .why-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .featured-services { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <div class="nav-logo">MG <span>Scientific</span> Solutions</div>
+    <a href="index.html" class="nav-logo">MG <span>Scientific</span> Solutions</a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#team">Our Team</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <div class="hero-badge">Scientific Consulting &amp; Innovation</div>
+      <div class="hero-badge">Independent Scientific Consulting</div>
       <h1>MG <span>Scientific</span><br/>Solutions</h1>
       <p class="hero-tagline">Science. Solutions. Impact.</p>
-      <p>Empowering organizations through scientific expertise, manufacturing support, quality excellence, and AI-enabled innovation — from concept to commercialization.</p>
+      <p>Your independent scientific partner — empowering organizations from concept to commercialization through expertise, integrity, and innovation.</p>
       <div class="hero-buttons">
-        <a href="#services" class="btn-primary">Our Services</a>
-        <a href="#contact" class="btn-outline">Get in Touch</a>
+        <a href="services.html" class="btn-primary">Our Services</a>
+        <a href="contact.html" class="btn-outline">Get in Touch</a>
       </div>
     </div>
   </section>
 
   <!-- WHY MG -->
-  <section style="background: var(--off-white); padding: 6rem 6%;">
+  <section style="background:var(--off-white); padding:6rem 6%;">
     <div style="max-width:1100px; margin:0 auto;">
       <div class="section-label">The Problem We Solve</div>
       <h2 class="section-title">World-Class Scientific Expertise.<br/>Without the Full-Time Hire.</h2>
       <div class="divider"></div>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; margin-bottom:4rem;">
+      <div class="why-grid">
         <div>
-          <p style="font-size:1.05rem; line-height:1.9; color:var(--gray);">Most organizations know what they want to build. Few have the scientific depth to know if they're building it right.</p>
-          <br/>
-          <p style="font-size:1.05rem; line-height:1.9; color:var(--gray);">Hiring a full-time PhD scientist isn't always the answer — it's expensive, slow, and often more than you need. But moving forward without one is a risk you can't afford.</p>
-          <br/>
-          <p style="font-size:1.05rem; line-height:1.9; color:var(--gray);">MG Scientific Solutions fills that gap. We become your independent scientific representative — on demand, without the overhead.</p>
+          <p style="font-size:1.05rem; line-height:1.9; color:var(--gray); margin-bottom:1.2rem;">Most organizations know what they want to build. Few have the scientific depth to know if they're building it right.</p>
+          <p style="font-size:1.05rem; line-height:1.9; color:var(--gray); margin-bottom:1.2rem;">Hiring a full-time PhD scientist isn't always the answer — it's expensive, slow, and often more than you need. But moving forward without one is a risk you can't afford.</p>
+          <p style="font-size:1.05rem; line-height:1.9; color:var(--gray); margin-bottom:2rem;">MG Scientific Solutions fills that gap. We become your independent scientific representative — on demand, without the overhead.</p>
+          <a href="about.html" class="btn-primary">Meet Our Team</a>
         </div>
-        <div style="background:var(--navy); padding:2.5rem; border-left:3px solid var(--gold);">
+        <div class="pain-box">
           <p style="font-size:0.85rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:1.5rem;">Sound familiar?</p>
           <ul style="list-style:none; display:flex; flex-direction:column; gap:1rem;">
-            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;">
-              <span style="position:absolute;left:0;color:var(--gold);">"</span>Our CDMO is taking too long and we don't know why."
-            </li>
-            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;">
-              <span style="position:absolute;left:0;color:var(--gold);">"</span>Our yield dropped from 75% to 45% and no one has answers."
-            </li>
-            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;">
-              <span style="position:absolute;left:0;color:var(--gold);">"</span>We don't know if this manufacturing quote is reasonable."
-            </li>
-            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;">
-              <span style="position:absolute;left:0;color:var(--gold);">"</span>We need a second opinion before we commit to this process."
-            </li>
-            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;">
-              <span style="position:absolute;left:0;color:var(--gold);">"</span>We don't know if this CDMO is actually competent."
-            </li>
+            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;"><span style="position:absolute;left:0;color:var(--gold);">"</span>Our CDMO is taking too long and we don't know why."</li>
+            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;"><span style="position:absolute;left:0;color:var(--gold);">"</span>Our yield dropped from 75% to 45% and no one has answers."</li>
+            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;"><span style="position:absolute;left:0;color:var(--gold);">"</span>We don't know if this manufacturing quote is reasonable."</li>
+            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;"><span style="position:absolute;left:0;color:var(--gold);">"</span>We need a second opinion before we commit to this process."</li>
+            <li style="color:rgba(255,255,255,0.8); font-size:0.92rem; padding-left:1.2rem; position:relative; line-height:1.6;"><span style="position:absolute;left:0;color:var(--gold);">"</span>We want to implement AI but we don't know where to start."</li>
           </ul>
         </div>
       </div>
 
-      <!-- Two featured services -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
-        <div style="background:var(--white); border:1px solid var(--light-gray); border-top:3px solid var(--gold); padding:2.5rem;">
-          <div style="font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.8rem;">Featured Service</div>
-          <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--navy); margin-bottom:0.8rem;">CDMO Technical Oversight</h3>
-          <p style="font-size:0.88rem; color:var(--gray); line-height:1.7; margin-bottom:1.5rem;">We become your scientific representative at the table — evaluating your CDMO's work with the same rigor they should be applying themselves.</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Route &amp; batch record review</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Analytical method evaluation</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Quote &amp; specification validation</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Risk assessment &amp; troubleshooting</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Technical meeting representation</li>
+      <div class="featured-services">
+        <div class="fs-card">
+          <div class="fs-label">Featured Service</div>
+          <h3>CDMO Technical Oversight</h3>
+          <p>We become your scientific representative at the table — evaluating your CDMO's work with the same rigor they should be applying themselves.</p>
+          <ul class="fs-list">
+            <li>Route &amp; batch record review</li>
+            <li>Analytical method evaluation</li>
+            <li>Quote &amp; specification validation</li>
+            <li>Risk assessment &amp; troubleshooting</li>
+            <li>Technical meeting representation</li>
           </ul>
         </div>
-
-        <div style="background:var(--white); border:1px solid var(--light-gray); border-top:3px solid var(--gold); padding:2.5rem;">
-          <div style="font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.8rem;">Featured Service</div>
-          <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--navy); margin-bottom:0.8rem;">Manufacturing Readiness Assessment</h3>
-          <p style="font-size:0.88rem; color:var(--gray); line-height:1.7; margin-bottom:1.5rem;">You have a molecule. We tell you exactly what it will take — and who is best equipped — to manufacture it at scale.</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Route complexity &amp; safety analysis</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Raw material &amp; regulatory review</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Cost driver identification</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> Manufacturing options evaluation</li>
-            <li style="font-size:0.84rem; color:var(--gray); padding-left:1rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span> CDMO shortlist &amp; recommendation</li>
+        <div class="fs-card">
+          <div class="fs-label">Featured Service</div>
+          <h3>Manufacturing Readiness Assessment</h3>
+          <p>You have a molecule. We tell you exactly what it will take — and who is best equipped — to manufacture it at scale.</p>
+          <ul class="fs-list">
+            <li>Route complexity &amp; safety analysis</li>
+            <li>Raw material &amp; regulatory review</li>
+            <li>Cost driver identification</li>
+            <li>Manufacturing options evaluation</li>
+            <li>CDMO shortlist &amp; recommendation</li>
           </ul>
         </div>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="services.html" class="btn-primary">View All Services</a>
       </div>
     </div>
   </section>
 
   <!-- GLOBAL PRESENCE -->
   <section style="background:var(--navy-dark); padding:5rem 6%; text-align:center; position:relative; overflow:hidden;">
-
-    <!-- SVG World Map Background -->
     <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg"
       style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.13;pointer-events:none;">
-      <style>
-        @keyframes pulse {
-          0%,100% { r: 5; opacity:1; }
-          50% { r: 10; opacity:0.4; }
-        }
-        @keyframes pulseRing {
-          0% { r: 6; opacity:0.8; }
-          100% { r: 22; opacity:0; }
-        }
-        .dot { fill:#C9A84C; animation: pulse 2.5s ease-in-out infinite; }
-        .ring { fill:none; stroke:#C9A84C; stroke-width:1.5; animation: pulseRing 2.5s ease-out infinite; }
-        .dot2 { animation-delay:0.5s; }
-        .dot3 { animation-delay:1s; }
-        .dot4 { animation-delay:1.5s; }
-        .dot5 { animation-delay:0.8s; }
-        .dot6 { animation-delay:1.2s; }
-        .ring2 { animation-delay:0.5s; }
-        .ring3 { animation-delay:1s; }
-        .ring4 { animation-delay:1.5s; }
-        .ring5 { animation-delay:0.8s; }
-        .ring6 { animation-delay:1.2s; }
-      </style>
-
-      <!-- North America -->
       <path d="M95,88 L132,76 L175,72 L212,80 L245,92 L268,108 L278,132 L274,158 L262,178 L248,198 L232,220 L215,242 L198,260 L178,272 L158,265 L140,248 L125,228 L110,205 L98,178 L90,150 L88,120 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- Greenland -->
       <path d="M292,55 L318,48 L345,52 L358,66 L352,82 L332,92 L308,90 L292,76 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- South America -->
       <path d="M215,278 L245,268 L272,272 L292,295 L302,325 L305,360 L298,395 L280,425 L256,445 L232,445 L210,428 L200,398 L196,362 L200,328 L208,302 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- Europe -->
       <path d="M442,96 L465,89 L488,88 L510,92 L528,104 L530,122 L522,140 L508,154 L488,162 L465,160 L448,148 L438,132 L438,114 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- Africa -->
       <path d="M448,188 L495,180 L535,184 L556,200 L562,228 L560,268 L555,308 L546,348 L528,385 L505,415 L480,425 L455,415 L438,388 L430,348 L428,305 L432,262 L438,225 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- Asia -->
       <path d="M532,88 L585,76 L645,65 L708,63 L768,68 L820,78 L862,95 L892,118 L898,145 L882,170 L852,190 L818,208 L778,220 L738,225 L698,218 L658,212 L618,208 L578,198 L545,182 L530,162 L526,135 L528,110 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- Southeast Asia islands (simplified) -->
       <ellipse cx="768" cy="268" rx="28" ry="18" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
       <ellipse cx="820" cy="280" rx="22" ry="14" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-      <!-- Australia -->
       <path d="M742,340 L782,328 L825,332 L852,348 L865,375 L860,405 L840,428 L808,438 L772,435 L748,415 L736,388 L736,360 Z" fill="#4a6fa5" stroke="#6b8fc5" stroke-width="1"/>
-
-      <!-- GOLD LOCATION DOTS with pulse rings -->
-      <!-- New Jersey, USA -->
-      <circle class="ring ring1" cx="218" cy="162" r="6"/>
-      <circle class="dot dot1" cx="218" cy="162" r="5"/>
-      <!-- Austin, Texas -->
-      <circle class="ring ring2" cx="196" cy="182" r="6"/>
-      <circle class="dot dot2" cx="196" cy="182" r="5"/>
-      <!-- Valparaíso, Chile -->
-      <circle class="ring ring3" cx="228" cy="358" r="6"/>
-      <circle class="dot dot3" cx="228" cy="358" r="5"/>
-      <!-- Rennes, France -->
-      <circle class="ring ring4" cx="458" cy="132" r="6"/>
-      <circle class="dot dot4" cx="458" cy="132" r="5"/>
-      <!-- Stockholm, Sweden -->
-      <circle class="ring ring5" cx="490" cy="105" r="6"/>
-      <circle class="dot dot5" cx="490" cy="105" r="5"/>
-      <!-- Ulsan, South Korea -->
-      <circle class="ring ring6" cx="778" cy="168" r="6"/>
-      <circle class="dot dot6" cx="778" cy="168" r="5"/>
-      <!-- Warsaw, Poland -->
-      <circle class="ring" style="animation-delay:1.8s" cx="508" cy="108" r="6"/>
-      <circle class="dot" style="animation-delay:1.8s" cx="508" cy="108" r="5"/>
+      <circle class="ring" cx="218" cy="162" r="6"/><circle class="dot" cx="218" cy="162" r="5"/>
+      <circle class="ring" style="animation-delay:0.5s" cx="196" cy="182" r="6"/><circle class="dot" style="animation-delay:0.5s" cx="196" cy="182" r="5"/>
+      <circle class="ring" style="animation-delay:1s" cx="228" cy="358" r="6"/><circle class="dot" style="animation-delay:1s" cx="228" cy="358" r="5"/>
+      <circle class="ring" style="animation-delay:1.5s" cx="458" cy="132" r="6"/><circle class="dot" style="animation-delay:1.5s" cx="458" cy="132" r="5"/>
+      <circle class="ring" style="animation-delay:0.8s" cx="490" cy="105" r="6"/><circle class="dot" style="animation-delay:0.8s" cx="490" cy="105" r="5"/>
+      <circle class="ring" style="animation-delay:1.8s" cx="508" cy="108" r="6"/><circle class="dot" style="animation-delay:1.8s" cx="508" cy="108" r="5"/>
+      <circle class="ring" style="animation-delay:1.2s" cx="778" cy="168" r="6"/><circle class="dot" style="animation-delay:1.2s" cx="778" cy="168" r="5"/>
     </svg>
-
-    <!-- Content -->
     <div style="position:relative; z-index:1; max-width:1100px; margin:0 auto;">
-      <div style="font-size:0.72rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:1rem;">Scientific Expertise Without Borders</div>
-      <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:700; color:var(--white); margin-bottom:1rem;">Research &amp; Industry Experience Across<br/>Four Continents</h2>
+      <div class="section-label">Scientific Expertise Without Borders</div>
+      <h2 style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:700; color:var(--white); margin-bottom:1rem;">Research &amp; Industry Experience Across Four Continents</h2>
       <p style="color:rgba(255,255,255,0.55); font-size:0.92rem; max-width:560px; margin:0 auto 3rem; line-height:1.8;">Our founders have lived, researched, and delivered results in North America, South America, Europe, and Asia — bringing a truly global scientific perspective to every engagement.</p>
-
       <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:0; border:1px solid rgba(201,168,76,0.2); max-width:900px; margin:0 auto; background:rgba(17,29,51,0.7); backdrop-filter:blur(4px);">
         <div style="flex:1; min-width:180px; padding:2rem 1.5rem; border-right:1px solid rgba(201,168,76,0.2);">
           <div style="font-size:1.8rem; margin-bottom:0.5rem;">🇺🇸</div>
@@ -876,430 +242,27 @@
           <div style="font-size:0.78rem; color:var(--gold);">Ulsan, South Korea</div>
         </div>
       </div>
-
       <div style="display:flex; justify-content:center; gap:3rem; margin-top:3rem; flex-wrap:wrap;">
-        <div style="text-align:center;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">4</div>
-          <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Continents</div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">7</div>
-          <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Countries</div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">2</div>
-          <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">PhDs</div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">15+</div>
-          <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Years Combined</div>
-        </div>
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">4</div><div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Continents</div></div>
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">7</div><div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Countries</div></div>
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">2</div><div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">PhDs</div></div>
+        <div style="text-align:center;"><div style="font-family:'Cormorant Garamond',serif; font-size:2.5rem; font-weight:700; color:var(--gold);">15+</div><div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5);">Years Combined</div></div>
       </div>
     </div>
   </section>
 
   <!-- PILLARS -->
-  <div class="pillars">
+  <section style="background:var(--off-white); padding:5rem 6%;">
     <div class="pillars-grid">
-      <div class="pillar-card">
-        <div class="pillar-icon">⚗️</div>
-        <h3>Solution</h3>
-        <p>Scientific problem-solving tailored to your technical challenges and product goals.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">⚙️</div>
-        <h3>Innovation</h3>
-        <p>AI-driven and technology-forward approaches that accelerate development cycles.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">📈</div>
-        <h3>Partnership</h3>
-        <p>Long-term relationships built on trust, integrity, and shared success.</p>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">👥</div>
-        <h3>Consulting</h3>
-        <p>World-class scientific guidance from concept through manufacturing.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- VISION & MISSION -->
-  <section class="vision-mission" id="about">
-    <div style="max-width:1100px; margin:0 auto;">
-      <div class="section-label">Who We Are</div>
-      <h2 class="section-title">Vision &amp; Mission</h2>
-      <div class="divider"></div>
-      <div class="vm-grid">
-        <div class="vm-card">
-          <h3>Our Vision</h3>
-          <p>To become a trusted scientific and innovation partner that helps organizations transform ideas into successful products through scientific expertise, manufacturing support, quality excellence, and AI-enabled innovation.</p>
-          <p>We envision a future where startups, manufacturers, and innovators have access to world-class scientific guidance, practical solutions, and domestic manufacturing expertise, accelerating the development of products that improve lives and strengthen industry.</p>
-        </div>
-        <div class="vm-card">
-          <h3>Our Mission</h3>
-          <p>MG Scientific Solutions empowers organizations by providing scientific consulting, process development, manufacturing support, quality systems expertise, and AI-driven solutions.</p>
-          <p>We partner with companies across chemicals, ingredients, cosmetics, advanced materials, biotechnology, and life sciences to solve technical challenges, optimize processes, accelerate innovation, and enable successful product commercialization.</p>
-          <p>Through integrity, expertise, collaboration, and continuous innovation, we help our clients move from concept to manufacturing with confidence.</p>
-        </div>
-      </div>
+      <div class="pillar-card"><div class="pillar-icon">⚗️</div><h3>Solution</h3><p>Scientific problem-solving tailored to your technical challenges and product goals.</p></div>
+      <div class="pillar-card"><div class="pillar-icon">⚙️</div><h3>Innovation</h3><p>AI-driven and technology-forward approaches that accelerate development cycles.</p></div>
+      <div class="pillar-card"><div class="pillar-icon">📈</div><h3>Partnership</h3><p>Long-term relationships built on trust, integrity, and shared success.</p></div>
+      <div class="pillar-card"><div class="pillar-icon">👥</div><h3>Consulting</h3><p>World-class scientific guidance from concept through manufacturing.</p></div>
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="team" id="team">
-    <div style="max-width:1100px; margin:0 auto;">
-      <div class="section-label">The People Behind The Science</div>
-      <h2 class="section-title">Who We Are</h2>
-      <div class="divider"></div>
-      <div class="team-card">
-        <div>
-          <div class="team-avatar">GA</div>
-        </div>
-        <div class="team-info">
-          <h3>Guillermo Ahumada, PhD</h3>
-          <div class="team-role">Co-Founder &amp; Principal Scientific Consultant</div>
-          <div class="team-credentials">Dual PhD in Chemistry — Université de Rennes 1 &amp; Pontificia Universidad Católica de Valparaíso &nbsp;|&nbsp; H-Index: 12 &nbsp;|&nbsp; 33 peer-reviewed publications</div>
-          <p class="team-bio">Guillermo brings over a decade of deep scientific expertise spanning organic chemistry, process development, advanced materials, electrochemistry, and nanotechnology. He has conducted research at world-class institutions across four continents — including IBS (South Korea), KTH Royal Institute of Technology (Sweden), and UT Austin — and currently serves as Director of R&amp;D at Mironova Labs, where he leads the full development lifecycle from concept through commercial-scale manufacturing for specialty chemical and cosmetic ingredient clients.<br/><br/>
-          His hands-on experience covers multi-step synthesis, scale-up from milligram to kilogram, CDMO management, QA/QC systems, DoE-driven process optimization, and analytical characterization (NMR, HPLC, GC-MS, and more). He combines classical scientific rigor with modern data science capabilities in Python and AI-driven approaches, enabling smarter, faster paths to product commercialization.</p>
-          <div class="team-tags">
-            <span class="team-tag">Organic Chemistry</span>
-            <span class="team-tag">Process Development</span>
-            <span class="team-tag">Scale-Up</span>
-            <span class="team-tag">Electrochemistry</span>
-            <span class="team-tag">CDMO Management</span>
-            <span class="team-tag">QA/QC</span>
-            <span class="team-tag">Advanced Materials</span>
-            <span class="team-tag">AI &amp; Data Science</span>
-          </div>
-        </div>
-      </div>
-      <!-- Magda -->
-      <div class="team-card" style="margin-top:2rem;">
-        <div>
-          <div class="team-avatar" style="background:linear-gradient(135deg,#2a1a4a 0%,#3d2460 100%);">MB</div>
-        </div>
-        <div class="team-info">
-          <h3>Magdalena Borkowska, PhD</h3>
-          <div class="team-role">Co-Founder &amp; Head of Quality &amp; Regulatory Affairs</div>
-          <div class="team-credentials">PhD in Biological Sciences &nbsp;|&nbsp; 15+ years across nanomedicine, cell &amp; gene therapy, GMP quality systems, and biomedical research</div>
-          <p class="team-bio">Magdalena brings a rare combination of deep bench science and strategic quality leadership — built across four countries and three continents. She spent over five years as Senior Research Fellow at IBS in South Korea, developing pioneering nanotechnology-based cancer therapeutics using gold nanoparticles, before transitioning into GMP-regulated cell and gene therapy environments in the United States.<br/><br/>
-          Currently serving as Director of Quality Partnerships at Minaris Advanced Therapies — a global CDMO leader in cell and gene therapy — she oversees quality governance, client partnerships, and GMP compliance across an international manufacturing network. Her expertise spans FDA cGMP, EU GMP, and ICH frameworks, with hands-on experience in technology transfers, audit readiness, CAPA management, regulatory inspections, and quality systems for advanced therapy products. She bridges the gap between technical execution and strategic quality oversight with precision and clarity.</p>
-          <div class="team-tags">
-            <span class="team-tag">GMP Quality Systems</span>
-            <span class="team-tag">FDA &amp; EU GMP</span>
-            <span class="team-tag">Cell &amp; Gene Therapy</span>
-            <span class="team-tag">Quality Partnerships</span>
-            <span class="team-tag">Technology Transfer</span>
-            <span class="team-tag">Audit &amp; Inspection Readiness</span>
-            <span class="team-tag">Nanomedicine</span>
-            <span class="team-tag">Flow Cytometry</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EXPERTISE -->
-  <section class="expertise" id="expertise">
-    <div style="max-width:1100px; margin:0 auto;">
-      <div class="section-label">Deep Domain Knowledge</div>
-      <h2 class="section-title">Technical Expertise</h2>
-      <div class="divider"></div>
-      <p class="expertise-intro">From bench-scale synthesis to commercial manufacturing, our expertise spans the full scientific and technical spectrum — grounded in real-world project experience across global research institutions and industry.</p>
-
-      <div class="expertise-grid">
-
-        <!-- Chemistry & Advanced Materials -->
-        <div class="expertise-card wide">
-          <h3>Chemistry &amp; Advanced Materials</h3>
-          <div class="expertise-two-col">
-            <div>
-              <div class="expertise-col-label">Representative Areas</div>
-              <ul class="expertise-list">
-                <li>Organometallic compounds</li>
-                <li>Metal-organic precursors</li>
-                <li>Specialty chemicals</li>
-                <li>Catalysts &amp; functional materials</li>
-                <li>Semiconductor materials</li>
-                <li>Cosmetic actives</li>
-                <li>Pharmaceutical intermediates</li>
-              </ul>
-            </div>
-            <div>
-              <div class="expertise-col-label">Representative Molecules &amp; Projects</div>
-              <ul class="expertise-list">
-                <li>TMHD metal complexes</li>
-                <li>Zirconium, yttrium, copper &amp; manganese precursors</li>
-                <li>ALD/CVD precursor development</li>
-                <li>Prostaglandin analogs &amp; Bimatoprost derivatives</li>
-                <li>Cloprostenol &amp; Misoprostol intermediates</li>
-                <li>Coupling reagents, peptides &amp; specialty ingredients</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Process Development -->
-        <div class="expertise-card">
-          <h3>Process Development &amp; Scale-Up</h3>
-          <div class="expertise-col-label">Capabilities</div>
-          <ul class="expertise-list">
-            <li>Route scouting</li>
-            <li>Process optimization</li>
-            <li>Impurity investigations</li>
-            <li>Technology transfer</li>
-            <li>Pilot-scale readiness</li>
-            <li>Manufacturing troubleshooting</li>
-          </ul>
-          <div class="expertise-col-label">Experience</div>
-          <ul class="expertise-list">
-            <li>Gram to kilogram scale-up</li>
-            <li>Cost reduction initiatives</li>
-            <li>Yield improvement programs</li>
-            <li>Process robustness evaluations</li>
-          </ul>
-        </div>
-
-        <!-- Analytical Sciences -->
-        <div class="expertise-card">
-          <h3>Analytical Sciences</h3>
-          <div class="expertise-col-label">Techniques</div>
-          <ul class="expertise-list">
-            <li>HPLC / UHPLC &amp; GC-MS</li>
-            <li>LC-MS &amp; ICP-MS</li>
-            <li>FTIR &amp; NMR</li>
-            <li>KF Titration</li>
-            <li>TGA / DSC</li>
-            <li>Elemental Analysis (CHNS)</li>
-          </ul>
-          <div class="expertise-col-label">Applications</div>
-          <ul class="expertise-list">
-            <li>Method development</li>
-            <li>Purity &amp; residual solvent analysis</li>
-            <li>Stability studies</li>
-            <li>Root cause investigations</li>
-          </ul>
-        </div>
-
-        <!-- Formulation -->
-        <div class="expertise-card">
-          <h3>Formulation &amp; Ingredient Solutions</h3>
-          <div class="expertise-col-label">Industries</div>
-          <ul class="expertise-list">
-            <li>Cosmetics &amp; Personal Care</li>
-            <li>Life Sciences</li>
-            <li>Specialty Chemicals</li>
-            <li>Advanced Materials</li>
-          </ul>
-          <div class="expertise-col-label">Expertise</div>
-          <ul class="expertise-list">
-            <li>Solubility &amp; compatibility assessments</li>
-            <li>Formulation optimization</li>
-            <li>Ingredient replacement strategies</li>
-            <li>Stability evaluations</li>
-            <li>Supplier qualification</li>
-          </ul>
-        </div>
-
-        <!-- AI for Science -->
-        <div class="expertise-card wide">
-          <h3>Artificial Intelligence for Science</h3>
-          <div class="expertise-two-col">
-            <div>
-              <div class="expertise-col-label">Applications</div>
-              <ul class="expertise-list">
-                <li>Scientific knowledge management</li>
-                <li>Literature review acceleration</li>
-                <li>Technical documentation generation</li>
-              </ul>
-            </div>
-            <div>
-              <div class="expertise-col-label">&nbsp;</div>
-              <ul class="expertise-list">
-                <li>R&amp;D workflow optimization</li>
-                <li>Laboratory productivity enhancement</li>
-                <li>AI adoption and training</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div style="max-width:1100px; margin:0 auto;">
-      <div class="section-label">What We Do</div>
-      <h2 class="section-title">Our Services</h2>
-      <div class="divider"></div>
-      <p class="services-intro">We deliver end-to-end scientific and technical support — helping organizations move faster from idea to market-ready product.</p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-num">01</div>
-          <h3>Scientific Consulting</h3>
-          <p>Expert guidance on formulation, chemistry, and regulatory strategy across a wide range of industries and product categories.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-num">02</div>
-          <h3>Process Development</h3>
-          <p>Designing and optimizing manufacturing processes for scalability, efficiency, and consistent quality from lab to production scale.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-num">03</div>
-          <h3>Manufacturing Support</h3>
-          <p>Hands-on support for domestic manufacturing operations, troubleshooting, and scale-up with a focus on quality and compliance.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-num">04</div>
-          <h3>Quality Systems</h3>
-          <p>Building and implementing robust quality frameworks — GMP, SOPs, and systems that meet regulatory and customer requirements.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-num">05</div>
-          <h3>AI-Driven Innovation</h3>
-          <p>Leveraging artificial intelligence and data analytics to accelerate R&amp;D, optimize formulations, and drive smarter decision-making.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-num">06</div>
-          <h3>Product Commercialization</h3>
-          <p>Guiding products from concept through launch — strategy, testing, documentation, and market readiness under one roof.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-num">07</div>
-          <h3>AI Implementation for Science</h3>
-          <p>We help science-driven organizations understand, adopt, and integrate AI tools into their R&amp;D workflows — without the guesswork. From identifying the right tools to building practical workflows your team will actually use.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AI SECTION -->
-  <section style="background:var(--off-white); padding:6rem 6%;">
-    <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
-      <div>
-        <div class="section-label">The Next Frontier</div>
-        <h2 class="section-title">We Want to Implement AI.<br/>We Just Don't Know Where to Start.</h2>
-        <div class="divider"></div>
-        <p style="color:var(--gray); font-size:0.95rem; line-height:1.9; margin-bottom:1.2rem;">Sound familiar? You've heard about AI transforming R&amp;D, documentation, literature review, and lab workflows — but navigating the landscape of tools, models, and workflows feels overwhelming.</p>
-        <p style="color:var(--gray); font-size:0.95rem; line-height:1.9; margin-bottom:1.2rem;">We've been there — and we've done it. MG Scientific Solutions helps science and manufacturing organizations take their first practical steps into AI adoption, with guidance grounded in real scientific workflows, not hype.</p>
-        <p style="color:var(--gray); font-size:0.95rem; line-height:1.9;">No computer science degree required. No expensive consultants selling software. Just practical, science-first AI integration that your team will actually use.</p>
-      </div>
-      <div style="display:flex; flex-direction:column; gap:1rem;">
-        <div style="background:var(--white); border-left:3px solid var(--gold); padding:1.5rem 2rem;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.4rem;">AI Readiness Assessment</div>
-          <p style="font-size:0.85rem; color:var(--gray); line-height:1.7;">We evaluate your current workflows and identify where AI can save time, reduce errors, and accelerate results — without disrupting what's already working.</p>
-        </div>
-        <div style="background:var(--white); border-left:3px solid var(--gold); padding:1.5rem 2rem;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.4rem;">Tool Selection & Workflow Design</div>
-          <p style="font-size:0.85rem; color:var(--gray); line-height:1.7;">From literature review acceleration to technical documentation generation, we identify the right tools and build workflows tailored to your scientific environment.</p>
-        </div>
-        <div style="background:var(--white); border-left:3px solid var(--gold); padding:1.5rem 2rem;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.4rem;">Team Training & Adoption</div>
-          <p style="font-size:0.85rem; color:var(--gray); line-height:1.7;">We train your scientists, QA professionals, and R&amp;D teams to use AI tools confidently — with hands-on sessions grounded in your actual projects and data.</p>
-        </div>
-        <div style="background:var(--white); border-left:3px solid var(--gold); padding:1.5rem 2rem;">
-          <div style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:0.4rem;">Ongoing AI Strategy Support</div>
-          <p style="font-size:0.85rem; color:var(--gray); line-height:1.7;">AI is evolving fast. We stay current so you don't have to — providing ongoing guidance as new tools emerge and your needs grow.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INDUSTRIES -->
-  <section class="industries" id="industries">
-    <div style="max-width:1100px; margin:0 auto;">
-      <div class="section-label">Sectors We Serve</div>
-      <h2 class="section-title">Industries</h2>
-      <div class="divider"></div>
-      <p style="color:var(--gray); max-width:580px; line-height:1.8; margin-bottom:1rem;">We partner with organizations across a broad range of science-driven sectors, bringing deep domain expertise to every engagement.</p>
-      <div class="industries-grid">
-        <div class="industry-tag">Chemicals</div>
-        <div class="industry-tag">Ingredients</div>
-        <div class="industry-tag">Cosmetics</div>
-        <div class="industry-tag">Advanced Materials</div>
-        <div class="industry-tag">Biotechnology</div>
-        <div class="industry-tag">Life Sciences</div>
-        <div class="industry-tag">Startups &amp; Innovators</div>
-        <div class="industry-tag">Manufacturers</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="section-label">Get In Touch</div>
-    <h2 class="section-title">Ready to Partner?</h2>
-    <div class="divider"></div>
-    <p>Whether you're a startup with a bold idea or an established manufacturer looking to optimize — we're ready to help you move forward with confidence.</p>
-
-    <form action="https://formspree.io/f/mjgdyqek" method="POST"
-      style="max-width:620px; margin:2.5rem auto 0; text-align:left;">
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
-        <div>
-          <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Name *</label>
-          <input type="text" name="name" required placeholder="Your name"
-            style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; transition:border-color 0.2s;"
-            onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"/>
-        </div>
-        <div>
-          <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Company</label>
-          <input type="text" name="company" placeholder="Your company"
-            style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; transition:border-color 0.2s;"
-            onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"/>
-        </div>
-      </div>
-
-      <div style="margin-bottom:1rem;">
-        <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Email *</label>
-        <input type="email" name="email" required placeholder="your@email.com"
-          style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"/>
-      </div>
-
-      <div style="margin-bottom:1rem;">
-        <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">How Can We Help?</label>
-        <select name="service"
-          style="width:100%; background:rgba(17,29,51,0.95); border:1px solid rgba(201,168,76,0.25); color:rgba(255,255,255,0.7); padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none;">
-          <option value="">Select a service...</option>
-          <option value="cdmo-oversight">CDMO Technical Oversight</option>
-          <option value="manufacturing-readiness">Manufacturing Readiness Assessment</option>
-          <option value="process-development">Process Development & Scale-Up</option>
-          <option value="quality-systems">Quality Systems & GMP</option>
-          <option value="scientific-consulting">Scientific Consulting</option>
-          <option value="ai-science">AI for Science</option>
-          <option value="other">Other / Not Sure Yet</option>
-        </select>
-      </div>
-
-      <div style="margin-bottom:1.5rem;">
-        <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Message *</label>
-        <textarea name="message" required rows="5" placeholder="Tell us about your project or challenge..."
-          style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; resize:vertical; transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"></textarea>
-      </div>
-
-      <button type="submit" class="btn-primary" style="width:100%; font-size:0.9rem; padding:1rem; cursor:pointer; border:none;">
-        Send Message
-      </button>
-
-      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35); text-align:center; margin-top:1rem;">
-        We typically respond within 1 business day.
-      </p>
-    </form>
-
-    <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(201,168,76,0.15);">
-      <a href="mailto:info@mgscientificsolutions.com" class="contact-email">info@mgscientificsolutions.com</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">MG <span>Scientific</span> Solutions</div>
+    <a href="index.html" class="footer-logo">MG <span>Scientific</span> Solutions</a>
     <p class="footer-tagline">Science. Solutions. Impact.</p>
     <p>&copy; 2026 MG Scientific Solutions LLC. All rights reserved.</p>
   </footer>
