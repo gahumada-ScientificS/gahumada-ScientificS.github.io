@@ -1139,10 +1139,66 @@
     <h2 class="section-title">Ready to Partner?</h2>
     <div class="divider"></div>
     <p>Whether you're a startup with a bold idea or an established manufacturer looking to optimize — we're ready to help you move forward with confidence.</p>
-    <br/>
-    <a href="mailto:info@mgscientificsolutions.com" class="contact-email">info@mgscientificsolutions.com</a>
-    <br/><br/>
-    <a href="mailto:info@mgscientificsolutions.com" class="btn-primary">Send Us a Message</a>
+
+    <form action="https://formspree.io/f/mjgdyqek" method="POST"
+      style="max-width:620px; margin:2.5rem auto 0; text-align:left;">
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+        <div>
+          <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Name *</label>
+          <input type="text" name="name" required placeholder="Your name"
+            style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; transition:border-color 0.2s;"
+            onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"/>
+        </div>
+        <div>
+          <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Company</label>
+          <input type="text" name="company" placeholder="Your company"
+            style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; transition:border-color 0.2s;"
+            onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"/>
+        </div>
+      </div>
+
+      <div style="margin-bottom:1rem;">
+        <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Email *</label>
+        <input type="email" name="email" required placeholder="your@email.com"
+          style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"/>
+      </div>
+
+      <div style="margin-bottom:1rem;">
+        <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">How Can We Help?</label>
+        <select name="service"
+          style="width:100%; background:rgba(17,29,51,0.95); border:1px solid rgba(201,168,76,0.25); color:rgba(255,255,255,0.7); padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none;">
+          <option value="">Select a service...</option>
+          <option value="cdmo-oversight">CDMO Technical Oversight</option>
+          <option value="manufacturing-readiness">Manufacturing Readiness Assessment</option>
+          <option value="process-development">Process Development & Scale-Up</option>
+          <option value="quality-systems">Quality Systems & GMP</option>
+          <option value="scientific-consulting">Scientific Consulting</option>
+          <option value="ai-science">AI for Science</option>
+          <option value="other">Other / Not Sure Yet</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom:1.5rem;">
+        <label style="display:block; font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.5); margin-bottom:0.4rem;">Message *</label>
+        <textarea name="message" required rows="5" placeholder="Tell us about your project or challenge..."
+          style="width:100%; background:rgba(255,255,255,0.07); border:1px solid rgba(201,168,76,0.25); color:white; padding:0.85rem 1rem; font-size:0.9rem; font-family:'Inter',sans-serif; outline:none; resize:vertical; transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='rgba(201,168,76,0.25)'"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" style="width:100%; font-size:0.9rem; padding:1rem; cursor:pointer; border:none;">
+        Send Message
+      </button>
+
+      <p style="font-size:0.78rem; color:rgba(255,255,255,0.35); text-align:center; margin-top:1rem;">
+        We typically respond within 1 business day.
+      </p>
+    </form>
+
+    <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(201,168,76,0.15);">
+      <a href="mailto:info@mgscientificsolutions.com" class="contact-email">info@mgscientificsolutions.com</a>
+    </div>
   </section>
 
   <!-- FOOTER -->
