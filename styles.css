@@ -419,6 +419,9 @@ footer p { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
   .expertise-card.wide { grid-column: span 1; }
   .expertise-two-col { grid-template-columns: 1fr; }
   footer { flex-direction: column; text-align: center; }
+  /* Engagement cards: stack sidebar on top of columns */
+  .engagement-card-inner { grid-template-columns: 1fr !important; }
+  .engagement-cols { grid-template-columns: 1fr !important; }
 }
 
 /* ============================================
