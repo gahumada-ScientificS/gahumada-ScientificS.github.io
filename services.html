@@ -14,6 +14,8 @@
     .ai-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
     .ai-card p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
     @media (max-width: 768px) { .ai-grid { grid-template-columns: 1fr; } }
+    .expanded-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    @media (max-width: 900px) { .expanded-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -82,6 +84,61 @@
           <h3>AI Implementation for Science</h3>
           <p>We help science-driven organizations understand, adopt, and integrate AI tools into their R&amp;D workflows — practical, science-first, and built for your team.</p>
         </div>
+        <div class="service-card">
+          <div class="service-num">09</div>
+          <h3>Fractional R&amp;D Leadership</h3>
+          <p>Your dedicated scientific team — without the overhead. We manage your entire R&amp;D pipeline, drive project decisions, and act as your internal science department on a flexible engagement basis.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">10</div>
+          <h3>US Material Qualification &amp; Verification</h3>
+          <p>We independently verify imported raw materials using accredited US laboratories and issue a US-backed qualification report — giving your supply chain the credibility it needs in the American market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPANDED SERVICES: FRACTIONAL R&D + US QUALIFICATION -->
+  <section style="background:var(--white); padding:6rem 6%;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-label fade-up">Highlighted Capabilities</div>
+      <h2 class="section-title fade-up delay-1">Two Services Uniquely Ours</h2>
+      <div class="divider fade-up delay-2"></div>
+
+      <div class="expanded-grid" style="margin-top:1rem;">
+
+        <!-- Fractional R&D -->
+        <div class="fade-up delay-1" style="border:1px solid var(--light-gray); border-top:4px solid var(--gold); padding:3rem; background:var(--off-white);">
+          <div style="font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:1rem;">Fractional R&amp;D Leadership</div>
+          <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.75rem; font-weight:700; color:var(--navy); line-height:1.25; margin-bottom:1.2rem;">Your R&amp;D Department.<br/>Without the Overhead.</h3>
+          <p style="color:var(--gray); line-height:1.85; font-size:0.93rem; margin-bottom:1.5rem;">Many organizations have the ambition to innovate — but not the internal science team to make it happen. Hiring a full R&amp;D team is expensive, slow, and often more than the stage of the business requires.</p>
+          <p style="color:var(--gray); line-height:1.85; font-size:0.93rem; margin-bottom:2rem;">MG Scientific Solutions acts as your <strong style="color:var(--navy);">embedded R&amp;D partner</strong> — managing projects, steering technical decisions, coordinating vendors and labs, and keeping your pipeline moving. You get experienced scientific leadership from Day 1, on a flexible basis that scales with your needs.</p>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem; margin-bottom:2rem;">
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Project roadmap design &amp; milestone management</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Vendor, CRO &amp; CDMO coordination</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Go / no-go technical decisions</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Investor &amp; board-level scientific reporting</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>On-demand scientific expertise across chemistry, materials &amp; life sciences</li>
+          </ul>
+          <a href="contact.html" class="btn-primary" style="display:inline-block;">Start a Conversation</a>
+        </div>
+
+        <!-- US Material Qualification -->
+        <div class="fade-up delay-2" style="border:1px solid var(--light-gray); border-top:4px solid var(--gold); padding:3rem; background:var(--off-white);">
+          <div style="font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:1rem;">US Material Qualification &amp; Verification</div>
+          <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.75rem; font-weight:700; color:var(--navy); line-height:1.25; margin-bottom:1.2rem;">Imported Materials.<br/>Independently Verified. US-Certified.</h3>
+          <p style="color:var(--gray); line-height:1.85; font-size:0.93rem; margin-bottom:1.5rem;">Many companies source raw materials from suppliers in Asia or other international markets — materials that arrive with a Certificate of Analysis (CoA) from a foreign laboratory. US buyers increasingly need more than that.</p>
+          <p style="color:var(--gray); line-height:1.85; font-size:0.93rem; margin-bottom:2rem;">We serve as your <strong style="color:var(--navy);">independent US-based scientific liaison</strong> — collecting samples, routing them to accredited American analytical laboratories, and issuing a formal <strong style="color:var(--navy);">US Qualification Report</strong> that independently confirms identity, purity, and compliance with your specifications. One document. Full credibility.</p>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem; margin-bottom:2rem;">
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Sample collection &amp; chain-of-custody management</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Routing to accredited US analytical labs (HPLC, GC-MS, NMR, ICP-MS &amp; more)</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>CoA cross-verification &amp; discrepancy analysis</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Formal US Qualification Report issued under MG SS</li>
+            <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Ideal for cosmetic, specialty chemical &amp; pharma raw materials</li>
+          </ul>
+          <a href="contact.html" class="btn-primary" style="display:inline-block;">Request a Qualification</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -151,7 +208,7 @@
         </div>
 
         <!-- Engagement 3 -->
-        <div class="fade-up delay-2" style="display:grid; grid-template-columns:280px 1fr; background:var(--white); border:1px solid var(--light-gray); border-left:4px solid var(--gold); overflow:hidden;">
+        <div class="fade-up delay-1" style="display:grid; grid-template-columns:280px 1fr; background:var(--white); border:1px solid var(--light-gray); border-left:4px solid var(--gold); overflow:hidden;">
           <div style="background:var(--navy); padding:2.5rem; display:flex; flex-direction:column; justify-content:space-between;">
             <div>
               <div style="font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.8rem;">Engagement 03</div>
@@ -173,6 +230,33 @@
             <div>
               <div style="font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.7rem;">The Outcome</div>
               <p style="font-size:0.88rem; color:var(--gray); line-height:1.75;">The client avoided costly delays and gained confidence that the selected manufacturing partner could support long-term growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Engagement 4 -->
+        <div class="fade-up delay-2" style="display:grid; grid-template-columns:280px 1fr; background:var(--white); border:1px solid var(--light-gray); border-left:4px solid var(--gold); overflow:hidden;">
+          <div style="background:var(--navy); padding:2.5rem; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.8rem;">Engagement 04</div>
+              <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:700; color:var(--white); line-height:1.3;">Verifying an Imported Raw Material for the US Market</h3>
+            </div>
+            <div style="margin-top:1.5rem;">
+              <span style="display:inline-block; background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.3); color:var(--gold); font-size:0.72rem; padding:0.3rem 0.8rem; letter-spacing:0.08em;">Supply Chain</span>
+            </div>
+          </div>
+          <div class="engagement-cols" style="padding:2.5rem; display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem;">
+            <div>
+              <div style="font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.7rem;">The Challenge</div>
+              <p style="font-size:0.88rem; color:var(--gray); line-height:1.75;">A US-based formulator sources a specialty ingredient from an Asian supplier. The material arrives with a foreign CoA, but their customer requires independent US-laboratory confirmation before it can be used in production.</p>
+            </div>
+            <div>
+              <div style="font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.7rem;">Our Role</div>
+              <p style="font-size:0.88rem; color:var(--gray); line-height:1.75;">We coordinated sample collection, submitted the material to an accredited US analytical laboratory, cross-verified the results against the supplier's CoA, and issued a formal US Qualification Report under MG Scientific Solutions.</p>
+            </div>
+            <div>
+              <div style="font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:0.7rem;">The Outcome</div>
+              <p style="font-size:0.88rem; color:var(--gray); line-height:1.75;">The client was able to proceed with production on schedule, with a single document that satisfied their customer's requirements and provided full traceability of the qualification process.</p>
             </div>
           </div>
         </div>
