@@ -15,7 +15,11 @@
     .ai-card p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
     @media (max-width: 768px) { .ai-grid { grid-template-columns: 1fr; } }
     .expanded-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
-    @media (max-width: 900px) { .expanded-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) {
+      .expanded-grid { grid-template-columns: 1fr; }
+      .portfolio-inner { grid-template-columns: 1fr !important; }
+      .portfolio-lists { grid-template-columns: 1fr !important; }
+    }
   </style>
 </head>
 <body>
@@ -94,6 +98,11 @@
           <h3>US Material Qualification &amp; Verification</h3>
           <p>We independently verify imported raw materials using accredited US laboratories and issue a US-backed qualification report — giving your supply chain the credibility it needs in the American market.</p>
         </div>
+        <div class="service-card">
+          <div class="service-num">11</div>
+          <h3>Scientific Portfolio Strategy &amp; B2B Development</h3>
+          <p>We review your existing product portfolio, identify gaps and opportunities, design new experiments and product directions, and help you tell your scientific story to new business clients.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -102,7 +111,7 @@
   <section style="background:var(--white); padding:6rem 6%;">
     <div style="max-width:1100px; margin:0 auto;">
       <div class="section-label fade-up">Highlighted Capabilities</div>
-      <h2 class="section-title fade-up delay-1">Two Services Uniquely Ours</h2>
+      <h2 class="section-title fade-up delay-1">Services That Set Us Apart</h2>
       <div class="divider fade-up delay-2"></div>
 
       <div class="expanded-grid" style="margin-top:1rem;">
@@ -140,6 +149,34 @@
         </div>
 
       </div>
+
+      <!-- Scientific Portfolio Strategy — full width -->
+      <div class="fade-up" style="border:1px solid var(--light-gray); border-top:4px solid var(--gold); padding:3rem; background:var(--off-white); margin-top:2.5rem;">
+        <div class="portfolio-inner" style="display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:start;">
+          <div>
+            <div style="font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:1rem;">Scientific Portfolio Strategy &amp; B2B Development</div>
+            <h3 style="font-family:'Cormorant Garamond',serif; font-size:1.75rem; font-weight:700; color:var(--navy); line-height:1.25; margin-bottom:1.2rem;">Grow Your Portfolio.<br/>Win New Clients.<br/>With Science as Your Edge.</h3>
+            <a href="contact.html" class="btn-primary" style="display:inline-block; margin-top:0.5rem;">Let's Review Your Portfolio</a>
+          </div>
+          <div>
+            <p style="color:var(--gray); line-height:1.85; font-size:0.93rem; margin-bottom:1.5rem;">You have products, ingredients, or capabilities — but do you have a clear scientific narrative around them? Do you know which gaps in your portfolio are costing you clients? Are you walking into B2B conversations with the scientific confidence to close?</p>
+            <p style="color:var(--gray); line-height:1.85; font-size:0.93rem; margin-bottom:2rem;">MG Scientific Solutions works directly with your team as a <strong style="color:var(--navy);">scientific business partner</strong> — reviewing what you offer today, identifying what the market needs, designing new product or experimental directions, and helping you articulate your science to the right buyers. We bridge the gap between your laboratory capabilities and your commercial goals.</p>
+            <div class="portfolio-lists" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem;">
+                <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Portfolio gap &amp; opportunity analysis</li>
+                <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>New product &amp; experiment design</li>
+                <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Differentiation strategy based on your science</li>
+              </ul>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem;">
+                <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Scientific storytelling for B2B sales</li>
+                <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Technical presentations &amp; white papers</li>
+                <li style="font-size:0.87rem; color:var(--gray); padding-left:1.2rem; position:relative;"><span style="position:absolute;left:0;color:var(--gold);">—</span>Support for client-facing scientific conversations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
