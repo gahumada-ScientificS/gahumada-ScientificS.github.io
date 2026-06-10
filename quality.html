@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quality Framework | MG Scientific Solutions</title>
+  <meta name="description" content="MG Scientific Solutions operates under an ISO 9001 quality management system. All laboratory partners hold ISO 17025 accreditation. Every engagement is backed by traceable chain of custody, data integrity review, and a formal MNDA." />
+  <meta name="robots" content="index, follow" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .quality-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .quality-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(201,168,76,0.2); padding: 2.2rem; display: flex; gap: 1.2rem; align-items: flex-start; }
+    .quality-icon { flex-shrink: 0; width: 42px; height: 42px; border: 1px solid rgba(201,168,76,0.4); display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+    .quality-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
+    .quality-card p { font-size: 0.84rem; color: rgba(255,255,255,0.55); line-height: 1.75; }
+    .standard-pill { display: inline-flex; align-items: center; gap: 0.8rem; border: 1px solid rgba(201,168,76,0.3); padding: 1.2rem 2rem; background: rgba(201,168,76,0.06); }
+    .standard-pill .std-label { font-size: 1.5rem; font-family: 'Cormorant Garamond', serif; font-weight: 700; color: var(--gold); }
+    .standard-pill .std-desc { font-size: 0.78rem; color: rgba(255,255,255,0.55); line-height: 1.5; }
+    .process-step { display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem; border: 1px solid var(--light-gray); background: var(--white); position: relative; }
+    .step-num { flex-shrink: 0; width: 44px; height: 44px; background: var(--navy); color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .process-step h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; }
+    .process-step p { font-size: 0.86rem; color: var(--gray); line-height: 1.75; }
+    @media (max-width: 768px) { .quality-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">MG <span>Scientific</span> Solutions</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="quality.html" class="active">Quality</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="section-label">Our Quality Commitment</div>
+    <h1>Quality Is Not a Checkbox.<br/>It Is How We Work.</h1>
+    <p>Every sample we handle, every report we issue, and every recommendation we make is backed by a formal quality management system — because your decisions depend on data you can trust.</p>
+  </div>
+
+  <!-- STANDARDS -->
+  <section style="background:var(--navy-dark); padding:5rem 6%;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-label fade-up">Our Certifications &amp; Standards</div>
+      <h2 class="fade-up delay-1" style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.6rem,2.8vw,2.2rem); font-weight:700; color:var(--white); margin-bottom:1rem;">The Entire Chain Is Quality-Governed</h2>
+      <div style="width:48px; height:2px; background:var(--gold); margin-bottom:2rem;" class="fade-up delay-2"></div>
+
+      <p class="fade-up delay-2" style="color:rgba(255,255,255,0.6); font-size:0.95rem; line-height:1.85; max-width:720px; margin-bottom:3rem;">MG Scientific Solutions operates under an <strong style="color:var(--white);">ISO 9001</strong> quality system for management and data review. To guarantee absolute technical accuracy, we exclusively route your physical samples to US partner facilities that hold formal <strong style="color:var(--white);">ISO 17025</strong> accreditation. We then cross-verify their raw data against your supplier's foreign CoA to generate your final Qualification Report.</p>
+
+      <p class="fade-up delay-2" style="color:rgba(255,255,255,0.4); font-size:0.88rem; line-height:1.85; max-width:720px; margin-bottom:3.5rem; font-style:italic;">Not every engagement requires a full qualification framework — and we understand that. We adapt to the scope, stage, and budget of each client. Whether you need a formal report or simply a trusted scientific opinion, we are here to help.</p>
+
+      <div class="fade-up" style="display:flex; flex-wrap:wrap; gap:1.5rem; margin-bottom:4rem;">
+        <div class="standard-pill">
+          <div>
+            <div class="std-label">ISO 9001</div>
+            <div class="std-desc">Quality Management System<br/>MG Scientific Solutions operations &amp; data review</div>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; color:rgba(255,255,255,0.2); font-size:1.5rem;">+</div>
+        <div class="standard-pill">
+          <div>
+            <div class="std-label">ISO 17025</div>
+            <div class="std-desc">Laboratory Accreditation<br/>All US partner analytical facilities</div>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; color:rgba(255,255,255,0.2); font-size:1.5rem;">=</div>
+        <div class="standard-pill" style="border-color:rgba(201,168,76,0.6);">
+          <div>
+            <div class="std-label" style="font-size:1.1rem; line-height:1.3;">End-to-End<br/>Quality Coverage</div>
+            <div class="std-desc">From engagement to final report</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quality-grid fade-up">
+        <div class="quality-card">
+          <div class="quality-icon">📋</div>
+          <div>
+            <h3>Traceable Chain of Custody</h3>
+            <p>Strict sample integrity from the moment we collect it through to final accredited US laboratory analysis. Every step is documented, timestamped, and traceable.</p>
+          </div>
+        </div>
+        <div class="quality-card">
+          <div class="quality-icon">🔍</div>
+          <div>
+            <h3>Ironclad Data Integrity</h3>
+            <p>Every report undergoes an internal data-verification review against raw analytical source data — HPLC chromatograms, GC-MS spectra, and instrument outputs — prior to release. We check the data, not just the summary.</p>
+          </div>
+        </div>
+        <div class="quality-card">
+          <div class="quality-icon">🤐</div>
+          <div>
+            <h3>Absolute Confidentiality</h3>
+            <p>No proprietary formulas, cosmetic ingredients, or analytical data are evaluated without a fully executed Mutual Non-Disclosure Agreement (MNDA). Your intellectual property is protected before we begin.</p>
+          </div>
+        </div>
+        <div class="quality-card">
+          <div class="quality-icon">⚖️</div>
+          <div>
+            <h3>Full Independence</h3>
+            <p>MG Scientific Solutions has no commercial affiliation with any supplier, manufacturer, or laboratory. Every conclusion we reach belongs to the science — and to you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW A QUALIFICATION WORKS -->
+  <section style="background:var(--off-white); padding:6rem 6%;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div class="section-label fade-up">The Process</div>
+      <h2 class="section-title fade-up delay-1">How a Material Qualification Works</h2>
+      <div class="divider fade-up delay-2"></div>
+      <p class="fade-up delay-2" style="color:var(--gray); max-width:600px; line-height:1.8; margin-bottom:3.5rem;">From the first conversation to the final report — here is exactly what happens when you engage MG Scientific Solutions for an independent material qualification.</p>
+
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div class="process-step fade-up">
+          <div class="step-num">01</div>
+          <div>
+            <h3>Scope &amp; Test Strategy</h3>
+            <p>We start by understanding your material, its intended use, your development stage, and what your buyer or regulator actually requires. We then define which analytical tests are scientifically relevant — not just a standard panel, but a strategy tailored to your situation.</p>
+          </div>
+        </div>
+        <div class="process-step fade-up delay-1">
+          <div class="step-num">02</div>
+          <div>
+            <h3>MNDA Execution</h3>
+            <p>Before any proprietary information changes hands, a Mutual Non-Disclosure Agreement is signed. Your formulas, ingredients, and supplier data are protected from the start.</p>
+          </div>
+        </div>
+        <div class="process-step fade-up delay-2">
+          <div class="step-num">03</div>
+          <div>
+            <h3>Sample Collection &amp; Chain of Custody</h3>
+            <p>We coordinate or directly manage sample collection from your facility or point of receipt. Every sample is logged, labeled, and tracked under a formal chain-of-custody protocol from this point forward.</p>
+          </div>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-num">04</div>
+          <div>
+            <h3>US Laboratory Testing</h3>
+            <p>Samples are routed exclusively to accredited US analytical laboratories holding ISO 17025 certification. Methods are selected to match the test strategy defined in Step 01 — HPLC, GC-MS, NMR, ICP-MS, FTIR, and others as required.</p>
+          </div>
+        </div>
+        <div class="process-step fade-up delay-1">
+          <div class="step-num">05</div>
+          <div>
+            <h3>Data Review &amp; CoA Cross-Verification</h3>
+            <p>We receive the raw analytical data directly from the laboratory and review it internally — checking instrument outputs, integration, and methodology — before comparing results against your supplier's Certificate of Analysis.</p>
+          </div>
+        </div>
+        <div class="process-step fade-up delay-2">
+          <div class="step-num">06</div>
+          <div>
+            <h3>Qualification Report &amp; Technical Interpretation</h3>
+            <p>We issue a formal US Qualification Report under MG Scientific Solutions, including a plain-language technical interpretation of the findings. If everything passes — you have your document. If something doesn't — we move to Step 07.</p>
+          </div>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-num">07</div>
+          <div>
+            <h3>Technical Resolution (When Needed)</h3>
+            <p>If a material fails or raises concerns, we don't stop at the report. We identify the root cause and define a practical path forward — whether that means additional testing, an impurity investigation, supplier communication, specification revision, purification strategy, reformulation, or identification of an alternative vendor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY THIS MATTERS -->
+  <section style="background:var(--navy); padding:5rem 6%;">
+    <div style="max-width:900px; margin:0 auto; text-align:center;">
+      <div class="section-label fade-up">Why It Matters</div>
+      <h2 class="fade-up delay-1" style="font-family:'Cormorant Garamond',serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:700; color:var(--white); line-height:1.3; margin-bottom:1.5rem;">"A foreign CoA tells you what the supplier wants you to know.<br/>A US Qualification Report tells you what the science actually says."</h2>
+      <div style="width:48px; height:2px; background:var(--gold); margin:0 auto 2rem;" class="fade-up delay-2"></div>
+      <p class="fade-up delay-2" style="color:rgba(255,255,255,0.6); font-size:0.95rem; line-height:1.9; margin-bottom:2.5rem;">For US buyers, importers, and manufacturers, the difference between a foreign CoA and an independently verified US report is the difference between a supplier's promise and a scientific fact. Our quality framework exists to protect your decisions, your compliance, and your customers.</p>
+      <a href="contact.html" class="btn-primary fade-up delay-3">Request a Qualification</a>
+    </div>
+  </section>
+
+  <script src="animations.js"></script>
+  <footer>
+    <a href="index.html" class="footer-logo">MG <span>Scientific</span> Solutions</a>
+    <p class="footer-tagline">Science. Solutions. Impact.</p>
+    <p>&copy; 2026 MG Scientific Solutions LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
