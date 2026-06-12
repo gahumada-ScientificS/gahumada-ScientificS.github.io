@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Administrator/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/bcba0a90-5944-4367-9fc3-bd94c3350434/8825baa2-a01d-41a0-a9b0-2fceef361429/skills/docx/**)",
+      "Bash(python scripts/office/unpack.py \"C:/Users/Administrator/OneDrive - Mironova Labs/Personal/Desktop/LundbergLab/finalversionsbeforesubmissiondeadlinetomorrow/Reviewer comments_2026-04-24.docx\" \"C:/Users/Administrator/OneDrive - Mironova Labs/Personal/Desktop/LundbergLab/finalversionsbeforesubmissiondeadlinetomorrow/unpacked_reviewers\")",
+      "Bash(pip install *)",
+      "Bash(python scripts/office/pack.py \"C:/Users/Administrator/OneDrive - Mironova Labs/Personal/Desktop/LundbergLab/finalversionsbeforesubmissiondeadlinetomorrow/unpacked_reviewers\" \"C:/Users/Administrator/OneDrive - Mironova Labs/Personal/Desktop/LundbergLab/finalversionsbeforesubmissiondeadlinetomorrow/Reviewer comments_2026-04-24.docx\" --original \"C:/Users/Administrator/OneDrive - Mironova Labs/Personal/Desktop/LundbergLab/finalversionsbeforesubmissiondeadlinetomorrow/Reviewer comments_2026-04-24.docx\")",
+      "Read(//c/Users/Administrator/Documents/mironova-projects/mironova-website/**)",
+      "Bash(npx tsc *)",
+      "Bash(/c/Users/Administrator/miniconda3/Scripts/pip.exe install *)",
+      "Bash(/c/Users/Administrator/miniconda3/python.exe -c \"import ffmpeg; print\\('ffmpeg-python OK'\\)\")",
+      "Bash(ffmpeg -version)",
+      "Bash(where ffmpeg *)",
+      "Bash(/c/Users/Administrator/miniconda3/Scripts/conda.exe install *)",
+      "Bash(/c/Users/Administrator/miniconda3/Library/bin/ffmpeg.exe -version)",
+      "Bash(/c/Users/Administrator/miniconda3/Scripts/conda.exe tos *)",
+      "PowerShell(& \"C:\\\\Users\\\\Administrator\\\\miniconda3\\\\Library\\\\bin\\\\ffmpeg.exe\" -version 2>&1)",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\Administrator\\\\miniconda3\\\\Library\\\\bin;\" + $env:PATH; ffmpeg -version 2>&1 | Select-Object -First 1)",
+      "PowerShell(Get-ChildItem \"F:\\\\Desktop\\\\Magdalena\\\\Minaris\\\\Records\\\\Fidelle\" | ForEach-Object { $_.Name })",
+      "Bash(py --version)",
+      "Bash(where python *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git pull *)",
+      "Bash(git push *)"
+    ]
+  }
+}

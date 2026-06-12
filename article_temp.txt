@@ -1,0 +1,896 @@
+4 May 2026
+Rapid and Selective Metal-Free O2 Reduction to
+H2O2 Using a Molecular CpN3 Electrocatalyst
+Sanju Luhach
+1, Tim Schramm
+2, Jan Kachnowicz
+2, Andreas Hansen
+2, Demyan Prokopchuk
+1
+1. Department of Chemistry, Rutgers University - Newark
+2. Mulliken Center for Theoretical Chemistry, Clausius Institute for Physical and Theoretical Chemistry, University of
+Bonn
+Abstract
+Hydrogen peroxide (H2O2) is a commodity chemical used broadly in the industrial sector that
+heavily relies on the 80+ year old anthraquinone process, requiring signiﬁcant energy input in
+combination with precious metal catalyzed hydrogenation. We describe a metal-free molecular
+cyclopentadiene-iminium ([CpN3H]2+) electrocatalyst for producing H2O2 under ambient conditions
+with high Faradaic eﬃciency (up to 95%) and turnover frequency (TOF up to 104 s-1), surpassing
+some of the most active transition-metal based molecular catalyst systems. The amine-rich radical
+cation intermediate ([CpN3H]+•) transfers a potent hydrogen atom (H•) to O2 through an unusual
+radical-rebound mechanism to form a key hydroperoxyl intermediate ([CpN3OOH]+•), with cutting-
+edge computational (DFT) and experimental mechanistic analyses in excellent agreement. This work
+demonstrates an innovative and sustainable molecular approach to furnish a valuable commodity
+chemical through an electrically driven process without the need for transition metals.
+Keywords
+hydrogen peroxide, density functional theory, foot-of-the-wave analysis, oxygen reduction, proton
+coupled electron transfer
+Posted on 4 May 2026 — CC-BY 4.0 — This is a preprint and has not been peer reviewed. Data may be preliminary. — https://
+doi.org/10.26434/chemrxiv-2025-wz7zf/v2
+ 
+1 
+Rapid and Selective Metal-Free O2 Reduction to 
+H2O2 Using a Molecular CpN3 Electrocatalyst 
+Sanju Luhach,1 Tim K. Schramm,2 Jan Kachnowicz,2 Andreas Hansen,2* and Demyan E. 
+Prokopchuk1* 
+1Department of Chemistry, Rutgers University-Newark, Newark, New Jersey 07102, United 
+States. *demyan.prokopchuk@rutgers.edu 
+2Mulliken Center for Theoretical Chemistry, Clausius Institute for Physical and Theoretical 
+Chemistry, Rhenish Friedrich Wilhelms University of Bonn, Bonn 53115, Germany. 
+*hansen@thch.uni-bonn.de 
+Abstract 
+Hydrogen peroxide (H2O2) is a commodity chemical used broadly in the industrial sector that 
+heavily relies on the 80+ year old anthraquinone process, requiring significant energy input in 
+combination with precious metal catalyzed hydrogenation. We describe a metal-free molecular 
+cyclopentadiene-iminium ([CpN3H]2+) electrocatalyst for producing H2O2 under ambient conditions 
+with high Faradaic efficiency (up to 95%) and turnover frequency (TOF up to 104 s-1), surpassing 
+some of the most active transition-metal based molecular catalyst systems. The amine-rich radical 
+cation intermediate ([CpN3H]+•) transfers a potent hydrogen atom (H•) to O2 through an unusual 
+radical-rebound mechanism to form a key hydroperoxyl intermediate ([CpN3OOH]+•), with cutting-
+ 
+2 
+edge computational (DFT) and experimental mechanistic analyses in excellent agreement. This 
+work demonstrates an innovative and sustainable molecular approach to furnish a valuable 
+commodity chemical through an electrically driven process without the need for transition metals.  
+KEYWORDS: electrocatalysis, oxygen reduction, proton coupled electron transfer, hydrogen 
+peroxide, foot-of-the-wave analysis, density functional theory 
+Introduction 
+The development of redox processes that sustainably deliver protons and electrons to small 
+molecules is critical for the energy and commodity chemical sectors. There is an urgent need to 
+electrify existing thermal and/or fossil-fuel based chemical processes through the direct 
+electroreduction of small molecules such as N2, O2, and/or CO2 in the presence of efficient and 
+sustainable (electro)catalysts, linking renewable energy reservoirs (solar, wind, etc.) with chemical 
+production pipelines.1-5 While heterogeneous catalyst research and development is actively being 
+pursued to address these challenges,6 there has been widespread interest in studying soluble 
+electrocatalysts in chemical synthesis because molecular scaffolds enable fidelity at the atomic 
+level to maximize product selectivity and efficiency through iterative chemical design strategies.7-
+9 
+Hydrogen peroxide (H2O2) is produced annually from O2 on a megaton scale and is a widely 
+used reagent for paper and textile bleaching,10, 11 water sewage treatment,12 and chemical 
+synthesis,13 thus securing its place as one of the 100 most important chemicals for industry and 
+society.14 In this context, the anthraquinone process remains the industry standard15 for performing 
+the necessary oxygen reduction reaction (ORR) to H2O2 via the heterogeneous Pd-catalyzed 
+hydrogenation of an anthraquinone derivative (AQR) followed by solution-phase autoxidation of 
+ 
+3 
+the anthrahydroquinone (AH2QR) under O2 to generate H2O2 in high yield (Figure 1A). However, 
+this process poses several technical challenges arising from inefficiencies in the 
+hydrogenation/oxidation reactors, quinone overhydrogenation, organic product contamination 
+during product extraction, and the need for extensive investment in industrial purification 
+equipment.13 Some electrochemical H2O2 production processes based on the oxidative coupling of 
+SO42- are also known,15 but their relevance is dwarfed by the anthraquinone process; however, 
+recent developments in solid electrolyte fuel-cells and redox-mediated anthraquinone technologies 
+have revitalized the prospects of attaining scalable electrochemical ORR production processes.16-
+18 Nonetheless, research into alternative (electro)synthetic ORR production methods is needed to 
+sidestep the limitations of the anthraquinone process and increase the overall sustainability of this 
+critical feedstock chemical.  
+ 
+ 
+4 
+ 
+Figure 1. Known ORR systems that catalyze H2O2 production (A-E). AQ = anthraquinone, AH2Q 
+= anthrahydroquinone, M = transition metal, MV = methyl viologen, im = 3,4-dihydro-2,4,4-
+trimethyl-1-(trifluoromethyl)isoquinolinyl. F, left: proton and H-atom release behavior of 
+precatalyst [CpN3H]2+ (iPr = isopropyl, left). E, right: metal-free ORR using [CpN3H]+ as a molecular 
+electrocatalyst (this work). HAT = H-atom transfer; CPET = concerted proton electron transfer. 
+To further understand electrically-driven molecular ORR and gain deeper mechanistic insights 
+into the 2H+/2e- reduction to H2O2, a diverse array of molecular electrocatalyst architectures have 
+been investigated in detail.19-21 Electrocatalysts containing transition metals (Mn), which have been 
+most heavily studied, typically undergo inner-sphere O2 binding to generate Mn+1-OO• 
+“superoxide” intermediates in the initial stages of reduction (Figure 1B).22, 23 Conversely, metal-
+free alternatives are substantially rarer and operate via mechanistically divergent pathways. For 
+example, Gabbaï and co-workers demonstrated that chemically tethered carbenium dications 
+cooperatively activate O2, selectively catalyzing H2O2 formation under chemical and 
+electrochemical conditions using methanesulfonic acid as the proton source (Figure 1C).24 
+Pioneering work by Savéant and Hapiot showed that methylviologen ([MV]+) and acridinium salts 
+generate O2•- via outer sphere electron transfer (ET) to O2 under acidic reducing conditions, 
+followed by HO2• generation and rapid disproportionation to yield O2 and H2O2 (Figure 1D).25-27 
+More recently, Machan and co-workers reported an iminium based electrocatalyst (im) whose 
+mechanism of ORR depends on the method of electroreduction: under spectrochemical conditions, 
+outer-sphere ET generates O2•- (Figure 1E) while an electrochemical bias promotes inner-sphere 
+O2 binding to a carbon-based organoradical followed by a 4H+/4e- reduction to generate H2O.28 
+Inner-sphere activation of O2 has also been demonstrated with a phenanthrolinium radical cation 
+ 
+5 
+(R+), where acid strength tunes the monomer-dimer equilibria ([R-OO-R]2+) prior to formation of 
+a hydroperoxyl cation intermediate ([ROOH]+), which subsequently releases H2O2.29 Notably, 
+hydroperoxyflavins 
+function 
+as 
+oxygen 
+atom 
+transfer 
+agents 
+in 
+flavin-dependent 
+monooxygenases30, 31 and flavin/flavinium photocatalysts,32, 33 with subsequent H2O2 elimination 
+via protonation.34 
+In our previous work, we discovered that [CpN3H]2+, a redox-active dication with delocalized 
+iminium-alkene character, has a moderately acidic C-H bond (pKaMeCN = 11.7; Fig 1F, left).35 
+Subsequent 1e- reduction to [CpN3H]•+ yields a weak homolytic C-H bond dissociation free energy 
+(BDFECH = 52 kcal/mol), prompting us to explore the utility of [CpN3H]•+ as a proton-coupled 
+electron transfer (PCET) reagent for the activation of O2 since: (1) the driving force for generating 
+the aqueous hydroperoxyl radical (HO2•) from O2 is comparable (BDFEOH = 51.2 kcal/mol);19 (2) 
+the presumed electrophilic character of radical cation [CpN3H]•+ would be suitably matched to react 
+with a nucleophilic radical substrate such as O2.36 Herein, we report a metal-free electrocatalyst 
+that rapidly and selectively facilitates the homogenous 2H+/2e- reduction of O2 to H2O2 with 
+[CpN3H]2+ serving as a precatalyst in the presence of an exogenous proton donor (Fig 1F, right). 
+Experimental and computational (DFT) mechanistic studies are in excellent agreement, supporting 
+a pathway where H-atom transfer from [CpN3H]•+ to an incoming O2 molecule is followed by a 
+radical-rebound to generate a hydroperoxide radical intermediate [CpN3(OOH)]+ and subsequent 
+CPET steps to regenerate [CpN3H]•+. While the stoichiometric reaction of O2 and precious metals 
+to generate hydroperoxide (M-OOH) complexes via H-atom transfer (HAT) is well documented,37-
+42 analogous HAT pathways using metal-free systems remain unprecedented, to the best of our 
+knowledge. Overall, this work demonstrates a novel “metal-like” electrocatalytic ORR pathway 
+traversed by the [CpN3H]•+ organoradical to facilitate H2O2 production via an initial HAT, deviating 
+ 
+6 
+from commonly encountered mechanistic scenarios involving outer-sphere and/or inner-sphere O2 
+activation pathways. 
+Results and Discussion 
+To begin, cyclic voltammograms (CVs) of the redox-active [CpN3H]2+ under N2 (E1/2 = -0.72 V 
+vs. Fc+/0, MeCN) become irreversible when the solution is saturated with air (Figure S5; all 
+potentials in this study are reported vs. Fc+/0). Addition of excess [p-BrC6H4NH3][BF4] (pKaMeCN = 
+9.43)43 leads to a substantial increase in current, suggestive of electrocatalytic O2 reduction 
+behavior (Figure 2A, orange trace).44 Switching from air to a dry stream of O2 leads to an 
+approximate five-fold increase in peak current, consistent with a concomitant increase in O2 
+solubility45 and a first-order dependence on [O2] (green trace). Negligible current enhancement is 
+observed with a Et3NH+ (pKaMeCN = 18.82),43 a weaker acid than [CpN3H]2+ (Figure S5).35 
+Furthermore, the redox chemistry of [CpN3]+ in the absence of O2 and acid is too cathodic (< -1.4 
+V) with respect to the electrochemical windows explored in this study, ruling out [CpN3]• as an on-
+cycle intermediate (Figure S6). The addition of exogenous H2O to the system has little effect on 
+the current response, indicating that proton relays or hydrogen bonding effects do not meaningfully 
+contribute to the observed reactivity of [CpN3H]2+ with H+ and O2 in solution (Fig S20).46 Due to 
+the known electrochemical irreversibility of [CpN3]+ under oxidizing conditions when using 
+[nBu4N][PF6] as the supporting electrolyte,47 the more inert supporting electrolyte 
+[nBu4N][B(C6F5)4] was used for all CV experiments to mitigate possible catalyst degradation 
+stemming from reactions with PF6-. 
+ 
+7 
+ 
+ 
+Figure 2. A: IUPAC plotted, iR uncompensated CV traces of [CpN3H]2+ (1.0 mM) under N2 (black), 
+under 1 atm air with 100 mM [p-BrC6H4NH3][BF4] (orange), and under 1 atm O2 with 100 mM [p-
+BrC6H4NH3][BF4] (green). Conditions: 0.1 V/s, 0.10 M [nBu4N][B(C6F5)4] electrolyte, PEEK-
+encased glassy carbon working electrode, Type 2 glassy carbon rod counter electrode, CoralPor-
+separated Ag wire pseudoreference coated with AgCl. Initial scan direction and position indicated 
+with a black arrow. B: Chronoamperograms under four different conditions: 0.20 mM [CpN3H]2+ 
+catalyst, 20 mM [p-BrC6H4NH3][BF4], and 1 atm O2 (green); 20 mM [p-BrC6H4NH3][BF4] and 1 
+atm O2 (blue), 0.20 mM [CpN3H]2+ catalyst and 1 atm O2 (orange), 0.20 mM [CpN3H]2+ catalyst, 20 
+mM [p-BrC6H4NH3][BF4], and 1 atm N2 (black). Conditions: -0.77 V applied potential, Type 2 
+glassy rod working and counter electrodes, CoralPor-separated Ag wire pseudoreference coated 
+with AgCl, 0.20 M [nBu4N][PF6].  
+Encouraged by these CV data, additional electrochemical experiments were conducted. 
+Controlled potential electrolysis (CPE) was performed at a hold potential of -0.77 V for 5 min in 
+a two-compartment H-cell separated by a fine glass frit (see the SI for details). The cathodic 
+compartment was charged with [CpN3H]2+, acid, and electrolyte dissolved in dry acetonitrile under 
+1 atm O2, resulting in slight current loss over the course of electrolysis (Figure 2B). Remarkably, 
+-300
+-250
+-200
+-150
+-100
+-50
+0
+50
+-1.00 -0.90 -0.80 -0.70 -0.60 -0.50 -0.40
+Current (µA)
+Potential (V vs. Fc+/0 )
+N2
+Air
+O2
+A.
+-0.5
+2.5
+5.5
+8.5
+11.5
+14.5
+0
+100
+200
+300
+Current (mA)
+Time (s)
+0.20 mM cat, 20 mM acid, O2
+No cat, 20 mM acid, O2
+No acid, 0.20 mM cat, O2
+No O2, 0.20 mM cat. 20 mM acid
+B.
+ 
+8 
+H2O2 is generated with up to 95% Faradaic efficiency (FE) and turnover numbers of 14, as 
+determined via UV-vis spectrophotometry using a colorimetric Ti4+(aq) assay (Table S1).48,49 Nearly 
+identical CV traces before and after CPE confirm catalyst stability over the course of 5 min (Figure 
+S27). However, current loss with longer electrolysis times (10 min) leads to catalyst degradation 
+(Figure S28) and decreased FE (< 60%).50 A substantially lower FE (33 ± 1 %) and total charge 
+passed are observed when performing rinse tests after 5 min CPE runs, supporting catalyst 
+homogeneity under these conditions (Figure S29 and Table S1).  
+Relevant control electrolysis experiments strongly indicate that [CpN3H]2+ is indeed selectively 
+catalyzing the production of H2O2, as in the absence of O2 or acid, no H2O2 is detected and 
+negligible current is passed (Figure 2, right). Only trace amounts of H2 were detected in the 
+headspace via gas chromatography when excluding O2 (Table S1). In the absence of [CpN3H]2+, 
+H2O2 is generated with 14% FE. H2O2 production in the absence of catalyst presumably occurs via 
+background O2 reduction in acidic aprotic solvent,25 as evidenced by modest increases in current 
+in bulk electrolysis experiments (Figure 2B). Notably, the addition of the hydroperoxyl (HO2•) 
+radical trap 5,5-dimethyl-1pyrroline N-oxide (DMPO) in CV experiments has no effect on the 
+current response (Figure S19, left),51 indicating that the formation of O2•- followed by free 
+hydroperoxyl radical (HO2•) formation and rapid disproportionation to generate H2O2 and H2O25 is 
+likely not occurring. Moreover, computational modeling of the reaction between DMPO and HO2•  
+at the PWPB95-D4/def2-QZVPP/CPCM-DRACO(MeCN)//r2SCAN-3c/CPCM(MeCN) level of 
+theory (see Supporting Information, part B for computational details) yields a low transition state 
+barrier height of 8.8 kcal/mol (Figure S32), which further supports the absence of free HO2• in 
+solution as it should readily be intercepted by the large excess of DMPO in the reaction medium. 
+ 
+9 
+To obtain kinetics data for this metal-free ORR reaction to produce H2O2, a series of CV 
+experiments were conducted with varying acid concentrations, showing a clear dependence on 
+current response with increasing [H+] (Figure 3A). All CV waveforms are well within zone K,8, 52-
+54 which is commonly seen in rapid oxygen reduction electrocatalysis due to substrate (O2) 
+depletion in the diffusion layer. We have previously shown compelling evidence for HAT via 
+[CpN3H]•+ under reducing conditions, as the radical cation can transfer H• to TEMPO or succumb 
+to deactivation via intermolecular H-atom transfer (i.e., radical-radical disproportionation) 
+involving two equivalents of [CpN3H]•+ (Figures 4-5).35 The bimolecular deactivation scenario is 
+corroborated by two key observations when conducting CVs of [CpN3H]2+ under N2 with excess 
+H+: (1) increased redox reversibility with increasing scan rate, suggesting that shorter CV 
+timescales begin to outcompete the second-order disproportionation reaction (Figure S17); (2) 
+decreased redox reversibility with increased concentration of [CpN3H]2+, which is a characteristic 
+feature of electrochemically initiated radical-radical dimerization events (Figure S18).55 Moreover, 
+decreased catalytic activity is observed with higher concentrations of [CpN3H]2+ with no increase 
+in catalytic current above 2.0 mM, suggesting the occurrence of kinetically competent second-
+order catalyst deactivation (Figure S16).29 Thus, all CV kinetic investigations are performed with 
+lower concentrations of [CpN3H]2+ (0.2-0.9 mM) to both minimize catalyst deactivation and 
+increase the O2:catalyst ratio (i.e., pseudo-first-order conditions with respect to [CpN3H]2+).  
+ 
+ 
+-140
+-120
+-100
+-80
+-60
+-40
+-20
+0
+20
+-0.9
+-0.8
+-0.7
+-0.6
+-0.5
+-0.4
+Current (µA)
+Potential (V vs. Fc+/0 )
+0.2 mM
+0.4 mM
+0.8 mM
+1.6 mM
+2.4 mM
+3.9 mM
+5.7 mM
+7.4 mM
+9.4 mM
+11.3 mM
+13.4 mM
+16.2 mM
+A.
+0
+2
+4
+6
+8
+10
+12
+14
+0
+0.01
+0.02
+0.03
+icat/ip
+(1+ EXP(f(E-E1/2)-1
+0.2 mM
+0.4 mM
+0.8 mM
+1.6 mM
+2.4 mM
+3.9 mM
+5.7 mM
+7.4 mM
+9.4 mM
+11.3 mM
+13.4 mM
+16.2 mM
+B.
+0.0E+00
+2.0E+04
+4.0E+04
+6.0E+04
+8.0E+04
+0
+0.004
+0.008
+0.012
+0.016
+0.02
+kobs (s-1)
+[acid](M)
+C.
+ 
+10 
+Figure 3.: A. IUPAC plotted, iR uncompensated CV traces of 0.20 mM [CpN3H]2+ in O2-saturated 
+MeCN ([O2] = 6.3 mM) with varying concentrations of [p-BrC6H4NH3][BF4]. See Figure 2 for 
+conditions. B. Foot-of-the-wave analysis (FOWA) of data in boxed region of Figure 3A (-0.55 V 
+to -0.58 V), where f = F/RT and 𝑖! = 0.95 𝜇𝐴. Yellow lines define the region used to determine 
+kobs. C. Variation of kobs as a function of [H+]. 
+Since this ORR electrocatalyst deviates from an idealized S-shaped current response, CV traces 
+were subjected to foot-of-the-wave analysis (FOWA)56 with varying concentrations of H+, O2, and 
+[CpN3H]2+, with [H+] dependence data from -0.55 to -0.61 V results shown in Figure 3B. Based on 
+this result and our proposed DFT-computed mechanism described later, FOWA parameters are 
+used assuming that all electron transfer events occur at the electrode (eq S5). The Ecat/2 for 
+[CpN3H]2+ at different acid concentrations is consistently -0.71 V, with no observed redox potential 
+drift as a function of [H+] (Figure S7).57 Plotting kobs vs. [H+] at low acid concentrations results in 
+a linear response and the plot of log[kobs] vs. log[H+] exhibits a slope of 1, indicating a first-order 
+dependence on acid with an average kacid = (3.3 ± 3.6) × 107 M-1s-1 (Figure S10). Acid-saturation 
+kinetics are achieved when [H+] ≥ 9 mM and averaging these data points gives kobs = TOF = 
+(6.1±2.3) × 104 s-1. Consequently, [CpN3H]2+ is among the fastest molecular H2O2 production 
+electrocatalysts reported in the literature, operating with an effective overpotential (ηeff) of 0.80 V 
+(eqs S11-S12). For comparison, the best-performing Co(macrocycle) ORR systems achieve TOFs 
+of up to 4.5 × 103 s-1 (ηeff = 0.56 V)58 while the recently reported metal-free phenanthrolindiium 
+catalyst reaches TOFs of up to 1.73 × 104 s-1 (ηeff = 0.78 V).29,59 Importantly, homoconjugation 
+effects60 were negligible since electrocatalytic trials in 20 mM buffered solutions containing 1:1 
+[p-BrC6H4NH3]+: p-BrC6H4NH2 showed no substantial change in current response and kobs (Figure 
+S11). Subjecting [CpN3H]2+ to classical icat/ip kinetic analysis results in an estimated kobs  of 9.2 × 
+ 
+11 
+102 s-1, which is expectedly lower due to substrate depletion, competing deactivation phenomena, 
+and background ORR as described earlier (Figure S14). 
+Additional kinetic information was obtained to determine an overall 3rd order rate law for ORR. 
+For this, CVs were performed in triplicate with varying [O2], and kO2 = (9.1 ± 4.6) × 106 M-1s-1 
+(Figure S12-S13), with a linear response indicating a first-order dependence on oxygen. The 
+reaction is also first order with respect to [CpN3H]2+ as 𝑖"#$ varies linearly as a function of catalyst 
+concentration (Figure S15).57, 61 Comparing the averaged kacid and kO2 values from triplicate 
+measurements under the same reaction conditions (20 mM [p-BrC6H4NH3]+, 6.3 mM O2) validates 
+the overall 3rd order kinetics, as 𝑘"#$ of (5.3 ± 5.7) × 10% 𝑀'(𝑠') and (4.5 ± 2.3) ×
+10* 𝑀'(𝑠'), respectively (eq S6-S9).62 Therefore, rate = kcat[cat][H+][O2], with the averaged 
+𝑘"#$ = (2.8 ± 3.4) × 10% 𝑀'(𝑠').  
+ 
+ 
+ 
+Table 1. Comparison of ORR kinetics data from experimenta and theoryb using a [CpN3H]2+ 
+precatalyst and the free energy landscape from Figure 5. 
+ 
+experiment 
+theory 
+TOF (s-1)c 
+(6.1± 2.3)  × 104 
+4.6 × 104 
+ΔG‡ (kcal/mol)c 
+11.7 ± 0.2 
+12.5 
+kH/kD 
+4.6d 
+5.0 
+  
+aSee the main text and supporting information for experimental conditions.  
+bPerformed 
+at 
+the 
+PWPB95-D4/def2-QZVPP/CPCM-DRACO(MeCN)//r2SCAN-
+3c/CPCM(MeCN) level of theory. See Figures 4 and 5 for mechanistic and the Supporting 
+Information part B for computational details. 
+ 
+12 
+cComputed applying the energetic span model at 298.15 K. 
+dCorrected for incomplete deuteration of [p-BrC6H4ND3]+ (95% D).63 See equation S10 in the 
+Supporting Information for details. 
+ 
+ 
+Figure 4. Proposed ORR mechanism, using precatalyst [CpN3H]2+ in its active (reduced) form 
+[CpN3H]+.  with a potential catalyst deactivation pathway shown in the center of the catalytic cycle. 
+Mechanistically, a direct HAT to O2 is followed by a radical rebound of HO2• with subsequent 
+H2O2 elimination and catalyst regeneration via two sequential CPET steps. All standard free energy 
+differences were calculated at the PWPB95-D4/def2-QZVPP/CPCM-DRACO(MeCN) // r2SCAN-
+3c/CPCM(MeCN) level of theory and with an applied external potential of –0.77 V vs Fc+/0. 
+Energies are provided in units of kcal/mol and reduction potentials are referenced in V vs Fc+/0. 
+Values obtained from experiment are denoted with the subscript “exp”. The acid [p-BrC6H4NH3]+ 
+ 
+13 
+was used for estimating the energetics of all protonation steps. [CpN3 • HO2]•+ was obtained by 
+slightly dislocating TS2 along the imaginary eigenmode towards H-O bond formation (scaling 
+factor of +0.25) followed by a simple geometry optimization without any constraints. 
+With the above kinetic information in hand, a computational analysis was undertaken to better 
+understand the mechanism of metal-free ORR, for which we employed our previously validated 
+state-of-the-art DFT workflow, capable of reproducing the known experimental PCET 
+thermochemistry of CpN3 with high fidelity.47 Hence, we report all DFT-computed energies at the 
+PWPB95-D4/def2-QZVPP/CPCM-DRACO(MeCN) // r2SCAN-3c/CPCM(MeCN) level of theory 
+based on molecular structures obtained after thorough conformational sampling with both GOAT64 
+and CREST,65 leveraging the software packages xTB,66 CENSO,67 and ORCA68 (see Supporting 
+Information part B for computational details).  
+Figure 4 shows our proposed catalytic cycle for ORR with precatalyst [CpN3H]2+ at an applied 
+potential of -0.77 V vs. Fc+/0, wholly consistent with the experimental observations described 
+above.  [CpN3H]2+ is initially reduced to the catalytically active [CpN3H]•+ (E°DFT = -0.74 V vs. Fc+/0, 
+MeCN), which can perform a direct HAT to O2 with a surprisingly low barrier of 12.5 kcal/mol 
+for a non-metal species, comparable to the HAT barrier from the metal hydride of CpFeH(CO)2 to 
+the tris(p-tert-butylphenyl)methyl radical at room temperature (ΔG‡ = 11.9 kcal/mol).69 HAT from 
+[CpN3H]•+ to O2 outcompetes the known second-order radical recombination reactivity of 
+[CpN3H]•+,35 which we propose as a possible catalyst deactivation pathway with a barrier height of 
+20.1 kcal/mol (Figure 4, middle) that corresponds to an effective half-life time of only t1/2 = 1.0 
+min at room temperature (assuming a unit transmission coefficient in Eyring transition state 
+theory).70 After successful HAT to O2, the resulting loosely bound hydroperoxyl radical cage pair 
+[CpN3 • HO2]•+ can readily rearrange to the hydroperoxide [CpN3OOH]•+, completing the radical-
+ 
+14 
+rebound steps. Notably, any other hydroperoxide adducts besides the proposed [CpN3OOH]•+ (e.g., 
+with the hydroperoxyl group bound to an adjacent carbon atom) were ruled out based on both 
+kinetic and thermodynamic arguments (see Section III in the SI, part B, for a detailed discussion). 
+Furthermore, the formation of radical cage pairs via HAT and subsequent radical recombination is 
+akin to stoichiometric O2 activation reactions mediated by a Au(III) hydride complex to form a 
+diamagnetic Au-OOH adduct.42, 71 Upon formation of the hydroperoxyl intermediate [CpN3OOH]•+, 
+we propose that two sequential CPET steps regenerate the catalytically active [CpN3H] •+ at standard 
+reduction potentials of +0.42 V and –0.45 V vs. Fc+/0, respectively.  
+ 
+ 
+Figure 5.  Free energy profile and representative molecular structures for key transition states (TS) 
+of the ORR with [CpN3H]+., using two equivalents of [p-BrC6H4NH3]+. See caption of Figure 4 and 
+ 
+15 
+the part B in the SI for more (computational) details. Intermediates (INT) are shown as states with 
+solid lines and TS are displayed with dashed lines. Different potential reactive pathways are 
+provided with varying colors: blue lines indicate the simultaneous proton/electron transfer via 
+CPET, whereas red lines correspond to the EC pathways (electrochemical step followed by 
+chemical step) and green lines show the CE pathways (vice versa). 
+Figure 5 provides a more detailed picture of the corresponding energetics of this ORR 
+mechanism (shown in black and blue). For instance, C-OOH bond formation leading to 
+[CpN3OOH]•+ from the corresponding transition state TS3 is associated with a substantial exergonic 
+free energy change (ΔG‡ + ΔG0 = 20.0 kcal/mol) via prior formation of a radical cage pair [CpN3 • 
+HO2]•+. This strongly biases the reaction toward radical recombination, enabling H2O2 elimination 
+via CPET involving [CpN3OOH]•+ rather than complete dissociation of HO2• after TS2 and 
+subsequent disproportionation into H2O2 and O2 in solution.25 Again, these data are consistent with 
+the DMPO radical trap experiments mentioned above and shown in Figure S15, for which a low 
+computed kinetic barrier of only 8.8 kcal/mol further confirms the fact that DMPO would indeed 
+be a capable radical trap for free HO2• if it were present in solution (Figure S32).   
+  
+  
+ 
+Figure 6: A. IUPAC plotted, iR uncompensated CV traces of [CpN3H]2+ (0.20 mM) under 1 atm O2 with 
+16 mM deuterated [p-BrC6H4ND3][BF4] (95% D) concentrations and 16 mM regular [p-BrC6H4ND3][BF4]. 
+-150
+-130
+-110
+-90
+-70
+-50
+-30
+-10
+10
+-1.00
+-0.90
+-0.80
+-0.70
+-0.60
+-0.50
+-0.40
+Current (µA)
+Potential (V vs. Fc+/0 )
+Deutero acid
+Protio acid
+A.
+0
+1
+2
+3
+4
+5
+6
+7
+8
+0
+0.003
+0.006
+0.009
+0.012
+icat/ip
+(1+ EXP(f(E-E1/2)-1
+Deutero acid
+Protio acid
+B.
+ 
+16 
+Conditions: MeCN, 0.1 V/s, 0.10 M [nBu4N][B(C6F5)4] electrolyte, PEEK-encased glassy carbon working 
+electrode, Type 2 glassy carbon rod counter electrode, CoralPor-separated Ag wire pseudoreference coated 
+with AgCl. Initial scan direction and position indicated with a black arrow. B. FOWA of data in boxed 
+region of CV data (-0.55 V to -0.58 V) in 6A. Corrected 𝑘!= 1.3 x 104 s-1, was determined using equations 
+S10 (See SI for details) considering 95% H/D exchange yielding a KIE of 4.6. 
+ 
+Instead of two subsequent CPET steps to close the catalytic cycle, one could also envision two 
+PCET pathways via EC (electrochemical followed by chemical step) or CE pathways (vice versa; 
+Figure 5). However, both these options are less likely for kinetic and thermodynamic reasons. 
+First, the maximum applied potential of -0.77 V vs. Fc+/0 is too high to facilitate the reduction of 
+either [CpN3OOH]•+ (E°DFT = -0.95 V vs. Fc+/0) or [CpN3]+ (E°DFT = -1.43 V vs. Fc+/0), rendering the 
+EC pathways electrochemically unfeasible, with the latter of these computed redox potentials also 
+in excellent agreement with experiment (Figure S6). Second, protonation of [CpN3OOH]•+ is 
+associated with a large barrier height of 27.1 kcal/mol, which makes this chemical step of the first 
+CE pathway kinetically improbable. In fact, experiments and computations corroborate that there 
+is no significant change in rate when employing a stronger ([p-CNC6H4NH3][BF4], pKaMeCN = 7.0) 
+or weaker acid ([C6H5NH3][BF4], pKaMeCN = 10.62), further supporting that proton transfer is not 
+involved in turnover-determining step(s) during catalysis (Figures S8-S9, Table S3). Third, a 
+kinetic isotope effect (KIE) of 4.6 was determined experimentally using [p-BrC6H4ND3]+ for the 
+investigated ORR with [CpN3H]2+, indicating that the transfer of hydrogen (as H• in TS2 or H+ in 
+TS5) is likely rate-limiting during electrocatalysis (Figure 6). However, the calculated value for 
+the protonation of [CpN3]+ (KIEDFT(TS5) ~ 1.4) differs quite substantially from the experimental 
+value, implying that this transition state and thus the second CE pathway should not be turnover 
+limiting. However, we note that the KIE mismatch does not, by itself, definitively diagnose a non-
+ 
+17 
+turnover-limiting pathway: the mismatch may also arise due to contributions from quantum 
+tunnelling (which are beyond the scope of this study), which is known to influence H/D isotope 
+effects even when the KIE values appear to be within “classical” ranges.72, 73 Last and most 
+importantly, it is well-known that CPETs may constitute a kinetically advantageous alternative 
+pathway compared to high-energy/high-barrier stepwise elementary reactions, further supporting 
+the plausibility of our current mechanistic proposal via two fast sequential CPET steps for catalyst 
+regeneration.22, 74, 75 With these CPET steps in mind, catalytic turnover according to the energetic 
+span model76, 77 is governed by the direct HAT to O2 (TS2) for which the calculated KIE is also in 
+excellent agreement with experiment (see Table 1). 
+In conclusion, we have discovered a new metal-free CpN3 electrocatalyst that rapidly and 
+selectively reduces O2 to H2O2 in the presence of exogenous acid, representing an innovative HAT 
+pathway towards sustainably producing a critical commodity chemical. Within our experimental 
+and (semiclassical) DFT framework, the combined thermodynamic, kinetic, and isotope-effect 
+evidence are consistent with the mechanistic model proposed in Figure 4. These findings 
+underscore several unique features of the CpN3 family of molecules: redox reversibility, propensity 
+for HAT chemistry, inner-sphere binding of a hydroperoxo moiety, and subsequent CPET 
+reactivity. These exciting developments open new vistas into the metal-free electrochemical 
+generation of H2O2, and we envision that the synthetically tunable CpN3 core will rapidly lead to 
+significant advancements in metal-free H2O2 electrosynthesis methodologies.  
+ 
+Methods 
+General synthetic and electrochemical methods are provided below. More detailed information 
+and data can be found in the Supporting Information. 
+ 
+18 
+  
+Synthesis of [CpN3H][BF4]235  
+In an N2-filled glove box, [CpN3][BF4]78, 79 (200 mg, 0.45 mmol) was dissolved in DCM (ca. 4 mL) 
+and 1.1 equiv of HBF4•Et2O (70 µl, 0.51 mmol) was added while stirring. The blue solution turned 
+yellow immediately after addition of acid and was stirred for 2 h. Diethyl ether (ca. 8 mL) was 
+added to the reaction and the product precipitated as a yellow solid. The solid was washed with 
+diethyl ether (ca. 2 mL), dried under high vacuum, then redissolved in MeCN (ca. 0.5 mL). The 
+product was crystallized by vapor diffusion of diethyl ether into a concentrated acetonitrile solution 
+in the glovebox freezer (-25 °C) overnight. Decanting the mother liquor and drying under high 
+vacuum yielded the crystalline, air stable product in 92% yield (220 mg). The 1H NMR spectrum 
+(Figure S3) is consistent with previously published data.35 
+ 
+Cyclic Voltammetry 
+Cyclic voltammetry (CV) experiments were conducted under N2 at 295 ± 3 K or under O2 at 295 
+± 3 K in a 5-neck pear-shaped flask (Figure S26, left) using a standard three-electrode setup 
+consisting of a PEEK-encased glassy carbon working disk electrode (∅ = 2 mm), Type 2 glassy 
+carbon rod counter electrode (∅ = 6 mm), and Ag/AgCl pseudoreference electrode stored in a glass 
+compartment containing solvent and electrolyte (0.1 M). The pseudoreference electrode is 
+separated from the bulk solution using a porous glass frit (Coralpor®). All CV experiments were 
+conducted in MeCN. CVs under N2 were conducted in a nitrogen-filled glove box, where the 
+working electrode was polished with 0.25 μm diamond polishing paste, lapping oil, and a rayon 
+micro cloth pad (Buehler) and thoroughly rinsed with MeCN.  For CVs under O2, a 0.05 µM 
+alumina powder suspension in deionized (DI) water was deposited onto a rayon microfiber cloth 
+ 
+19 
+pad to polish the working electrode under air and was thoroughly rinsed with DI water and MeCN 
+before use. A Gamry Reference 1010B potentiostat and Gamry software were used for data 
+collection and analysis. In all reported CVs, the 4th scan/sweep is typically plotted and used for 
+analysis. All CVs are referenced to the Fc+/0 redox couple (0 V). During CV experiments, ferrocene 
+was added at the end of the experiments unless explicitly stated otherwise. For further details see 
+the Supporting Information.  
+ 
+ 
+ 
+ 
+ 
+20 
+References 
+(1) Chu, S.; Majumdar, A. Opportunities and challenges for a sustainable energy future. Nature 
+2012, 488, 294. DOI: 10.1038/nature11475. 
+(2) Chen, J. G.; Crooks, R. M.; Seefeldt, L. C.; Bren, K. L.; Bullock, R. M.; Darensbourg, M. Y.; 
+Holland, P. L.; Hoffman, B.; Janik, M. J.; Jones, A. K.; et al. Beyond fossil fuel-driven nitrogen 
+transformations. Science 2018, 360 (6391). DOI: 10.1126/science.aar6611. 
+(3) De Luna, P.; Hahn, C.; Higgins, D.; Jaffer, S. A.; Jaramillo, T. F.; Sargent, E. H. What would 
+it take for renewably powered electrosynthesis to displace petrochemical processes? Science 
+2019, 364 (6438). DOI: 10.1126/science.aav3506 (acccessed 04). 
+(4) Anson, C. W.; Stahl, S. S. Mediated Fuel Cells: Soluble Redox Mediators and Their 
+Applications to Electrochemical Reduction of O2 and Oxidation of H2, Alcohols, Biomass, and 
+Complex Fuels. Chemical Reviews 2020, 120 (8), 3749-3786. DOI: 
+10.1021/acs.chemrev.9b00717. 
+(5) Qing, G.; Ghazfar, R.; Jackowski, S. T.; Habibzadeh, F.; Ashtiani, M. M.; Chen, C.-P.; 
+Smith, M. R.; Hamann, T. W. Recent Advances and Challenges of Electrocatalytic N2 Reduction 
+to Ammonia. Chemical Reviews 2020, 120 (12), 5437-5516. DOI: 
+10.1021/acs.chemrev.9b00659. 
+(6) Seh, Z. W.; Kibsgaard, J.; Dickens, C. F.; Chorkendorff, I.; Nørskov, J. K.; Jaramillo, T. F. 
+Combining theory and experiment in electrocatalysis: Insights into materials design. Science 
+2017, 355 (6321). DOI: 10.1126/science.aad4998. 
+(7) Costentin, C.; Savéant, J.-M. Towards an intelligent design of molecular electrocatalysts. 
+Nature Reviews Chemistry 2017, 1, 0087. (acccessed 10). 
+(8) Lee, K. J.; Elgrishi, N.; Kandemir, B.; Dempsey, J. L. Electrochemical and spectroscopic 
+methods for evaluating molecular electrocatalysts. Nature Reviews Chemistry 2017, 1, 0039. 
+DOI: 10.1038/s41570-017-0039. 
+(9) Wiedner, E. S.; Appel, A. M.; Raugei, S.; Shaw, W. J.; Bullock, R. M. Molecular Catalysts 
+with Diphosphine Ligands Containing Pendant Amines. Chemical Reviews 2022, 0 (0), null. 
+DOI: 10.1021/acs.chemrev.1c01001. 
+(10) Ljunggren, S. C. H. The kinetics of lignin reactions during oxygen bleaching. Nordic Pulp 
+& Paper Research Journal 1990, 5, 38 - 43. 
+(11) Hage, R.; Lienke, A. Applications of Transition-Metal Catalysts to Textile and Wood-Pulp 
+Bleaching. Angewandte Chemie International Edition 2006, 45 (2), 206-222. DOI: 
+https://doi.org/10.1002/anie.200500525. 
+(12) Kosaka, K.; Yamada, H.; Shishida, K.; Echigo, S.; Minear, R. A.; Tsuno, H.; Matsui, S. 
+Evaluation of the treatment performance of a multistage ozone/hydrogen peroxide process by 
+decomposition by-products. Water Research 2001, 35 (15), 3587-3594. DOI: 
+https://doi.org/10.1016/S0043-1354(01)00087-2. 
+(13) Campos-Martin, J. M.; Blanco-Brieva, G.; Fierro, J. L. G. Hydrogen Peroxide Synthesis: An 
+Outlook beyond the Anthraquinone Process. Angewandte Chemie International Edition 2006, 45 
+(42), 6962-6984. DOI: https://doi.org/10.1002/anie.200503779. 
+(14) Myers, R. L. The 100 Most Important Chemical Compounds: a Reference Guide; 
+Greenwood Press, 2007. 
+(15) Goor, G.; Glenneberg, J.; Jacobi, S.; Dadabhoy, J.; Candido, E. Hydrogen Peroxide. In 
+Ullmann’s Encyclopedia of Industrial Chemistry, Wiley-VCH Verlag GmbH & Co. KGaA, 
+2019; pp 1-40. 
+ 
+21 
+(16) Anson, C. W.; Stahl, S. S. Processes for Electrochemical Production of Electrolyte-free 
+Hydrogen Peroxide. Joule 2019, 3 (12), 2889-2891. DOI: 
+https://doi.org/10.1016/j.joule.2019.11.017. 
+(17) Murray, A. T.; Voskian, S.; Schreier, M.; Hatton, T. A.; Surendranath, Y. Electrosynthesis 
+of Hydrogen Peroxide by Phase-Transfer Catalysis. Joule 2019, 3 (12), 2942-2954. DOI: 
+https://doi.org/10.1016/j.joule.2019.09.019. 
+(18) Xia, C.; Xia, Y.; Zhu, P.; Fan, L.; Wang, H. Direct electrosynthesis of pure aqueous H2O2 
+solutions up to 20% by weight using a solid electrolyte. Science 2019, 366 (6462), 226-231. 
+DOI: 10.1126/science.aay1844. 
+(19) Pegis, M. L.; Wise, C. F.; Martin, D. J.; Mayer, J. M. Oxygen reduction by homogeneous 
+molecular catalysts and electrocatalysts. Chemical Reviews 2018, 118 (5), 2340-2391. DOI: 
+10.1021/acs.chemrev.7b00542. 
+(20) Cook, E. N.; Machan, C. W. Homogeneous catalysis of dioxygen reduction by molecular 
+Mn complexes. Chem. Commun. 2022, 58, 11746-11761. DOI: 10.1039/D2CC04628H. 
+(21) Machan, C. W. Advances in the Molecular Catalysis of Dioxygen Reduction. ACS Catalysis 
+2020, 10 (4), 2640-2655. DOI: 10.1021/acscatal.9b04477. 
+(22) Anson, C. W.; Ghosh, S.; Hammes-Schiffer, S.; Stahl, S. S. Co(salophen)-Catalyzed 
+Aerobic Oxidation of p-Hydroquinone: Mechanism and Implications for Aerobic Oxidation 
+Catalysis. Journal of the American Chemical Society 2016, 138 (12), 4186-4193. DOI: 
+10.1021/jacs.6b00254. 
+(23) Pegis, M. L.; Martin, D. J.; Wise, C. F.; Brezny, A. C.; Johnson, S. I.; Johnson, L. E.; 
+Kumar, N.; Raugei, S.; Mayer, J. M. Mechanism of Catalytic O2 Reduction by Iron 
+Tetraphenylporphyrin. Journal of the American Chemical Society 2019, 141 (20), 8315-8326. 
+DOI: 10.1021/jacs.9b02640. 
+(24) Karimi, M.; Borthakur, R.; Dorsey, C. L.; Chen, C.-H.; Lajeune, S.; Gabbaï, F. P. 
+Bifunctional Carbenium Dications as Metal-Free Catalysts for the Reduction of Oxygen. Journal 
+of the American Chemical Society 2020, 142 (32), 13651-13656. DOI: 10.1021/jacs.0c04841. 
+(25) Chin, D. H.; Chiericato, G., Jr.; Nanni, E. J., Jr.; Sawyer, D. T. Proton-induced 
+disproportionation of superoxide ion in aprotic media. Journal of the American Chemical Society 
+1982, 104 (5), 1296-1299. DOI: 10.1021/ja00369a025. 
+(26) Andrieux, C. P.; Hapiot, P.; Sa Véant, J. M. Electron transfer coupling of diffusional 
+pathways. Homogeneous redox catalysis of dioxygen reduction by the methylviologen cation 
+radical in acidic dimethylsulfoxide. Journal of Electroanalytical Chemistry and Interfacial 
+Electrochemistry 1985, 189 (1), 121-133. DOI: https://doi.org/10.1016/0368-1874(85)85630-6. 
+(27) Audebert, P.; Hapiot, P. Preparation and electrochemistry of several substituted 9-(4-R-
+phenyl)-N-methylacridinium salts.: Kinetic analysis of the O2 catalytic reduction in acidic 
+dimethylsulfoxide and in hydrophobic Nafion® gels. Journal of Electroanalytical Chemistry 
+1993, 361 (1), 177-183. DOI: https://doi.org/10.1016/0022-0728(93)87052-W. 
+(28) Cook, E. N.; Davis, A. E.; Hilinski, M. K.; Machan, C. W. Metal-Free Homogeneous O2 
+Reduction by an Iminium-Based Electrocatalyst. Journal of the American Chemical Society 
+2024, 146 (12), 7931-7935. DOI: 10.1021/jacs.3c14549. 
+(29) Cook, E. N.; Flaxman, L. A.; Reid, A. G.; Dickie, D. A.; Machan, C. W. Acid Strength 
+Effects on Dimerization during Metal-Free Catalytic Dioxygen Reduction. Journal of the 
+American Chemical Society 2024, 146 (36), 24892-24900. DOI: 10.1021/jacs.4c05708. 
+ 
+22 
+(30) Huijbers, M. M. E.; Montersino, S.; Westphal, A. H.; Tischler, D.; van Berkel, W. J. H. 
+Flavin dependent monooxygenases. Archives of Biochemistry and Biophysics 2014, 544, 2-17. 
+DOI: https://doi.org/10.1016/j.abb.2013.12.005. 
+(31) Dong, J.; Fernández-Fueyo, E.; Hollmann, F.; Paul, C. E.; Pesic, M.; Schmidt, S.; Wang, Y.; 
+Younes, S.; Zhang, W. Biocatalytic Oxidation Reactions: A Chemist's Perspective. Angewandte 
+Chemie International Edition 2018, 57 (30), 9238-9261. DOI: 
+https://doi.org/10.1002/anie.201800343. 
+(32) König, B.; Kümmel, S.; Svobodová, E.; Cibulka, R. Flavin photocatalysis. Physical 
+Sciences Reviews 2018, 3 (8). DOI: 10.1515/psr-2017-0168. 
+(33) Zelenka, J.; Svobodová, E.; Tarábek, J.; Hoskovcová, I.; Boguschová, V.; Bailly, S.; 
+Sikorski, M.; Roithová, J.; Cibulka, R. Combining Flavin Photocatalysis and Organocatalysis: 
+Metal-Free Aerobic Oxidation of Unactivated Benzylic Substrates. Organic Letters 2019, 21 (1), 
+114-119. DOI: 10.1021/acs.orglett.8b03547. 
+(34) Sucharitakul, J.; Wongnate, T.; Chaiyen, P. Hydrogen Peroxide Elimination from C4a-
+hydroperoxyflavin in a Flavoprotein Oxidase Occurs through a Single Proton Transfer from 
+Flavin N5 to a Peroxide Leaving Group. Journal of Biological Chemistry 2011, 286 (19), 16900-
+16909. DOI: 10.1074/jbc.M111.222976. 
+(35) Luhach, S.; Lalancette, R. A.; Prokopchuk, D. E. “Catch and release” of the CpN3 ligand 
+using cobalt: dissociation, protonation, and C–H bond thermochemistry. Dalton Transactions 
+2024, 53 (47), 18865-18872. DOI: 10.1039/D4DT01560F. 
+(36) Garwood, J. J. A.; Chen, A. D.; Nagib, D. A. Radical Polarity. Journal of the American 
+Chemical Society 2024, 146 (41), 28034-28059. DOI: 10.1021/jacs.4c06774. 
+(37) Keith, J. M.; Nielsen, R. J.; Oxgaard, J.; Goddard, W. A. Pd-Mediated Activation of 
+Molecular Oxygen in a Nonpolar Medium. Journal of the American Chemical Society 2005, 127 
+(38), 13172-13179. DOI: 10.1021/ja043094b. 
+(38) Denney, M. C.; Smythe, N. A.; Cetto, K. L.; Kemp, R. A.; Goldberg, K. I. Insertion of 
+Molecular Oxygen into a Palladium(II) Hydride Bond. Journal of the American Chemical 
+Society 2006, 128 (8), 2508-2509. DOI: 10.1021/ja0562292. 
+(39) Konnick, M. M.; Decharin, N.; Popp, B. V.; Stahl, S. S. O2 insertion into a palladium(ii)-
+hydride bond: Observation of mechanistic crossover between HX-reductive-elimination and 
+hydrogen-atom-abstraction pathways. Chem. Sci. 2011, 2, 326-330. DOI: 
+10.1039/C0SC00392A. 
+(40) Keith, J. M.; Teets, T. S.; Nocera, D. G. O2 Insertion into Group 9 Metal–Hydride Bonds: 
+Evidence for Oxygen Activation through the Hydrogen-Atom-Abstraction Mechanism. Inorganic 
+Chemistry 2012, 51 (17), 9499-9507. DOI: 10.1021/ic301303n. 
+(41) Halbach, R. L.; Teets, T. S.; Nocera, D. G. Oxygen Reduction Mechanism of Monometallic 
+Rhodium Hydride Complexes. Inorganic Chemistry 2015, 54 (15), 7335-7344. DOI: 
+10.1021/acs.inorgchem.5b00856. 
+(42) Phearman, A. S.; Ardon, Y.; Goldberg, K. I. Insertion of Molecular Oxygen into a 
+Gold(III)-Hydride Bond. Journal of the American Chemical Society 2024, 146 (6), 4045-4059. 
+DOI: 10.1021/jacs.3c12285. 
+(43) Kütt, A.; Tshepelevitsh, S.; Saame, J.; Lõkov, M.; Kaljurand, I.; Selberg, S.; Leito, I. 
+Strengths of acids in acetonitrile. European Journal of Organic Chemistry 2021, 2021 (9), 1407-
+1419. DOI: 10.1002/ejoc.202001649. 
+(44) Diminished current responses were observed with electrolytes containing PF6-, leading us 
+to perform all subsequent CV experiments using [nBu4N][B(C6F5)4] 
+ 
+23 
+(45) Li, Q.; Batchelor-McAuley, C.; Lawrence, N. S.; Hartshorne, R. S.; Compton, R. G. 
+Anomalous solubility of oxygen in acetonitrile/water mixture containing tetra-n-butylammonium 
+perchlorate supporting electrolyte; the solubility and diffusion coefficient of oxygen in 
+anhydrous acetonitrile and aqueous mixtures. Journal of Electroanalytical Chemistry 2013, 688, 
+328-335. DOI: 10.1016/j.jelechem.2012.07.039. 
+(46) Kilgore, U. J.; Roberts, J. A.; Pool, D. H.; Appel, A. M.; Stewart, M. P.; DuBois, M. R.; 
+Dougherty, W. G.; Kassel, W. S.; Bullock, R. M.; DuBois, D. L. [Ni(PPh2NC6H4X2)2]2+ 
+complexes as electrocatalysts for H2 production: effect of substituents, acids, and water on 
+catalytic rates. Journal of the American Chemical Society 2011, 133 (15), 5861-5872. DOI: 
+10.1021/ja109755f. 
+(47) Tresp, D. S.; Schramm, T. K.; Luhach, S.; Rosendo, A.; Houn, A.; Zhang, T.; Turtz, A.; 
+Lockard, J. V.; Hansen, A.; Prokopchuk, D. E. Expanding the PCET Thermochemistry of CpN3: 
+N–H Bond Strengths of Metal-Free CpN3 Molecules and the Influence of Fe(CO)3 Coordination. 
+ACS Organic & Inorganic Au 2025. DOI: 10.1021/acsorginorgau.5c00060. 
+(48) Lewis, D. The Absorption Spectrum of the Titanium (IV) –Hydrogen Peroxide Complex. 
+The Journal of Physical Chemistry 1958, 62 (9), 1145-1146. DOI: 10.1021/j150567a036. 
+(49) Cai, R.; Itoh, K.; Sun, C. pH effect on the optical properties of peroxo-titanium complex. 
+MRS Online Proceedings Library 2005, 900, 1305. DOI: 10.1557/PROC-0900-O13-05. 
+(50) The identity of deactivation product(s) remains unclear and is beyond the scope of this 
+work. 
+(51) Wierzbicki, S.; Douglin, J. C.; Singh, R. K.; Dekel, D. R.; Kruczała, K. Operando EPR 
+Study of Radical Formation in Anion-Exchange Membrane Fuel Cells. ACS Catalysis 2023, 13 
+(4), 2744-2750. DOI: 10.1021/acscatal.2c05843. 
+(52) Savéant, J. M.; Su, K. B. Homogeneous redox catalysis of electrochemical reaction: Part VI. 
+Zone diagram representation of the kinetic regimes. Journal of Electroanalytical Chemistry and 
+Interfacial Electrochemistry 1984, 171 (1), 341-349. DOI: https://doi.org/10.1016/0022-
+0728(84)80125-4. 
+(53) Savéant, J.-M. Molecular Catalysis of Electrochemical Reactions. Mechanistic Aspects. 
+Chemical Reviews 2008, 108 (7), 2348-2378. DOI: 10.1021/cr068079z. 
+(54) Rountree, E. S.; McCarthy, B. D.; Eisenhart, T. T.; Dempsey, J. L. Evaluation of 
+Homogeneous Electrocatalysts by Cyclic Voltammetry. Inorganic Chemistry 2014, 53 (19), 
+9983-10002. DOI: 10.1021/ic500658x. 
+(55) Savéant, J. M.; Costentin, C. Elements of Molecular and Biomolecular Electrochemistry; 
+John Wiley & Sons, Ltd, 2019. DOI: 10.1002/9781119292364. 
+(56) Costentin, C.; Drouet, S.; Robert, M.; Savéant, J.-M. Turnover numbers, turnover 
+frequencies, and overpotential in molecular catalysis of electrochemical reactions. Cyclic 
+voltammetry and preparative-scale electrolysis. Journal of the American Chemical Society 2012, 
+134 (27), 11235-11242. DOI: 10.1021/ja303560c. 
+(57) Wasylenko, D. J.; Rodríguez, C.; Pegis, M. L.; Mayer, J. M. Direct Comparison of 
+Electrochemical and Spectrochemical Kinetics for Catalytic Oxygen Reduction. Journal of the 
+American Chemical Society 2014, 136 (36), 12544-12547. DOI: 10.1021/ja505667t. 
+(58) Wang, Y.-H.; Mondal, B.; Stahl, S. S. Molecular Cobalt Catalysts for O2 Reduction to H2O2: 
+Benchmarking Catalyst Performance via Rate--Overpotential Correlations. ACS Catalysis 2020, 
+10 (20), 12031-12039. DOI: 10.1021/acscatal.0c02197. 
+(59) The supporting information in reference 29 provides a detailed performance comparison of 
+other metal-free electrocatalysts reported to date. 
+ 
+24 
+(60) Appel, A. M.; Helm, M. L. Determining the overpotential for a molecular electrocatalyst. 
+ACS Catalysis 2014, 4 (2), 630-633. DOI: 10.1021/cs401013v. 
+(61) Costentin, C.; Savéant, J. M. Multielectron, Multistep Molecular Catalysis of 
+Electrochemical Reactions: Benchmarking of Homogeneous Catalysts. ChemElectroChem 2014, 
+1 (7), 1226-1236. DOI: 10.1002/celc.201300263. 
+(62) Notably, these kcat values are not statistically different due to the large variance of the mean 
+for each dataset. 
+(63) Chang, M. H.; Crawford, R. J. Secondary deuterium isotope effects on both rate and product 
+determining steps in the thermolysis of 4-methylene-1-pyrazoline. Canadian Journal of 
+Chemistry 1981, 59 (16), 2556-2567. DOI: 10.1139/v81-368. 
+(64) de Souza, B. GOAT: A Global Optimization Algorithm for Molecules and Atomic Clusters. 
+Angewandte Chemie International Edition 2025, e202500393. DOI: 10.1002/anie.202500393. 
+(65) Pracht, P.; Bohle, F.; Grimme, S. Automated exploration of the low-energy chemical space 
+with fast quantum chemical methods. Phys. Chem. Chem. Phys. 2020, 22, 7169-7192. DOI: 
+10.1039/C9CP06869D. 
+(66) Bannwarth, C.; Caldeweyher, E.; Ehlert, S.; Hansen, A.; Pracht, P.; Seibert, J.; Spicher, S.; 
+Grimme, S. Extended tight-binding quantum chemistry methods. WIREs Computational 
+Molecular Science 2021, 11 (2), e1493. DOI: https://doi.org/10.1002/wcms.1493. 
+(67) Grimme, S.; Bohle, F.; Hansen, A.; Pracht, P.; Spicher, S.; Stahn, M. Efficient Quantum 
+Chemical Calculation of Structure Ensembles and Free Energies for Nonrigid Molecules. The 
+Journal of Physical Chemistry A 2021, 125 (19), 4039-4054. DOI: 10.1021/acs.jpca.1c00971. 
+(68) Neese, F. Software Update: The ORCA Program System—Version 6.0. WIREs 
+Computational Molecular Science 2025, 15 (2), e70019. DOI: 10.1002/wcms.70019. 
+(69) Eisenberg, D. C.; Lawrie, C. J. C.; Moody, A. E.; Norton, J. R. Relative rates of hydrogen 
+H• transfer from transition-metal hydrides to trityl radicals. Journal of the American Chemical 
+Society 1991, 113 (13), 4888-4895. DOI: 10.1021/ja00013a026. 
+(70) Eyring, H. The Activated Complex in Chemical Reactions. The Journal of Chemical Physics 
+1935, 3 (2), 107-115. DOI: 10.1063/1.1749604 (acccessed 02). 
+(71) Sorbelli, D.; Belpassi, L.; Belanzoni, P. Mechanistic Insights into Molecular Oxygen 
+Reactivity with Late Transition Metal–Hydride Bonds. Inorganic Chemistry 2025, 64 (29), 
+15193-15205. DOI: 10.1021/acs.inorgchem.5c02310. 
+(72) Schneider, J. E.; Goetz, M. K.; Anderson, J. S. Variable temperature kinetic isotope effects 
+demonstrate extensive tunnelling in the C-H activation reactivity of a transition metal-oxo 
+complex. Chem. Commun. 2023, 59, 8584-8587. DOI: 10.1039/D3CC02130K. 
+(73) Roque, J. P. L.; Nunes, C. M.; Schreiner, P. R.; Fausto, R. Hydrogen Tunneling Exhibiting 
+Unexpectedly Small Primary Kinetic Isotope Effects. Chemistry – A European Journal 2024, 30 
+(39), e202401323. DOI: 10.1002/chem.202401323. 
+(74) Warren, J. J.; Tronic, T. A.; Mayer, J. M. Thermochemistry of Proton-Coupled Electron 
+Transfer Reagents and its Implications. Chemical Reviews 2010, 110 (12), 6961-7001. DOI: 
+10.1021/cr100085k. 
+(75) Agarwal, R. G.; Coste, S. C.; Groff, B. D.; Heuer, A. M.; Noh, H.; Parada, G. A.; Wise, C. 
+F.; Nichols, E. M.; Warren, J. J.; Mayer, J. M. Free Energies of Proton-Coupled Electron 
+Transfer Reagents and Their Applications. Chemical Reviews 2022, 122 (1), 1-49. DOI: 
+10.1021/acs.chemrev.1c00521. 
+(76) Kozuch, S.; Shaik, S. How to Conceptualize Catalytic Cycles? The Energetic Span Model. 
+Accounts of Chemical Research 2011, 44 (2), 101-110. DOI: 10.1021/ar1000956. 
+ 
+25 
+(77) Kozuch, S. A refinement of everyday thinking: the energetic span model for kinetic 
+assessment of catalytic cycles. WIREs Computational Molecular Science 2012, 2 (5), 795-815. 
+DOI: https://doi.org/10.1002/wcms.1100. 
+(78) Gompper, R.; Glöckner, H. Stable Cyclopentadienylium Salts. Angewandte Chemie 
+International Edition in English 1984, 23 (1), 53-54. DOI: 10.1002/anie.198400532. 
+(79) Lator, A.; Gaillard, Q. G.; Mérel, D. S.; Lohier, J.-F.; Gaillard, S.; Poater, A.; Renaud, J.-L. 
+Room-Temperature Chemoselective Reductive Alkylation of Amines Catalyzed by a Well-
+Defined Iron(II) Complex Using Hydrogen. The Journal of Organic Chemistry 2019, 84 (11), 
+6813-6829. DOI: 10.1021/acs.joc.9b00581. 
+ 
+ 
+Acknowledgements 
+D.E.P. thanks the National Science Foundation (NSF) CAREER program (2442904) for generous 
+financial support. The authors gratefully acknowledge computational resources provided by the 
+Marvin HPC cluster of the University of Bonn. A.H., J.K. and T.K.S. thank Prof. Stefan Grimme 
+for fruitful discussions. 
+ 
+Author Contributions 
+Conceptualization: D.P. and A.H.; Formal Analysis: D.E.P. and S.L. (experiment); T.K.S., J. K. 
+and A.H. (computations); Funding Acquisition: D.E.P.; Project Administration and Resources: 
+D.P. and A.H.; Investigation: all authors; Visualization: S.L., T.K.S., and D.E.P.; Supervision: 
+D.E.P. and A.H. Writing-original draft: S.L., T.K.S., and D.E.P.; Writing–review and editing: all 
+authors. 
+ 
+Competing Interests 
+The authors declare no competing interests. 
+ 
+26 
+TOC Graphic 
+ 
+ 
+ 
+ 
+N
+N
+N
+Ph
+Ph
+H
+iPr
+H
+[CpN3H]•+
+[CpN3(OOH)]+
+H+, e-
+H2O2 + [CpN3]+
+CPET
+O2
+CPET
+H+, e-
+•
+via
+HAT
+[CpN3H]2+
+ e-
