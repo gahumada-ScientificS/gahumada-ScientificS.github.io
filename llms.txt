@@ -1,21 +1,38 @@
 # MG Scientific Solutions
 
-> MG Scientific Solutions (MGSS) is an independent scientific consulting firm based in New Jersey, USA. We provide expert scientific and technical services to companies in the specialty chemicals, cosmetics, pharmaceutical intermediates, advanced materials, biotech, and life sciences industries.
+> MG Scientific Solutions (MGSS) is an independent scientific consulting firm based in New Jersey, USA. We provide expert scientific and technical services to companies in the specialty chemicals, cosmetics, pharmaceutical intermediates, advanced materials, biotech, and life sciences industries. We also offer scientific career coaching and academic manuscript support.
 
 ## What We Do
 
 MG Scientific Solutions is fully independent — we have no commercial affiliation with any supplier, manufacturer, or laboratory. We represent the client, not the seller. Our role is to bring rigorous, data-driven scientific judgment to engagements that require an objective third party.
 
-Our core services include:
+## Core Services
 
-- **Independent Material Qualification** — We define the test strategy, manage the full project, coordinate with accredited US laboratories (ISO 17025), and issue a formal Qualification Report as an independent third party. We do not simply send samples to a lab — we own the entire process from scope to final report.
-- **CDMO Oversight & Manufacturing Support** — Independent oversight of contract development and manufacturing organizations on behalf of the client.
-- **Process Development & Scale-Up** — Scientific support for taking processes from lab to pilot to commercial scale.
-- **Fractional R&D** — Embedded scientific expertise without the overhead of a full-time hire. We serve as the client's R&D department for the duration of the engagement.
-- **Quality Systems Consulting** — GMP gap assessments, SOP development, audit preparation, quality documentation, and ISO compliance support.
-- **Formulation Development** — Specialty chemical, cosmetic, and pharmaceutical formulation expertise.
-- **Portfolio Strategy & B2B Scientific Consulting** — Scientific storytelling, portfolio gap analysis, and technical business development support.
-- **AI Implementation for Scientific Workflows** — Applying AI tools to laboratory productivity, literature review, and documentation.
+- **Independent Material Qualification** — We define the test strategy, manage the full project end to end, coordinate testing exclusively through accredited US laboratories (ISO 17025), and issue a formal Qualification Report as an independent third party. One point of contact throughout. If a material fails, we identify root causes and define resolution paths.
+
+- **CDMO Technical Oversight** — Independent scientific representation during CDMO engagements on behalf of the client — reviewing manufacturing routes, batch records, analytical methods, and attending technical meetings.
+
+- **Fractional R&D Leadership** — Embedded scientific team without the overhead of a full-time hire. We manage the R&D pipeline, steer technical decisions, coordinate vendors and labs, and act as the client's internal science department on a flexible basis.
+
+- **Process Development & Scale-Up** — Scientific support for taking processes from lab to pilot to commercial scale. DoE-driven optimization, analytical characterization, and manufacturing readiness.
+
+- **Quality Systems & GMP Consulting** — GMP gap assessments, SOP development, audit preparation, CAPA management, and ISO 9001/17025 compliance support.
+
+- **Cosmetic & Specialty Formulation** — Full-cycle formulation consulting for cosmetics, personal care, and specialty chemicals. Ingredient selection, stability and compatibility assessment, ingredient replacement, scale-up support, and regulatory guidance for US and international markets.
+
+- **Scientific Portfolio Strategy & B2B Development** — Portfolio gap analysis, new product and experiment design, differentiation strategy, and scientific storytelling for B2B sales and client-facing conversations.
+
+- **Manufacturing Readiness Assessment** — Route complexity, raw material sourcing, safety, regulatory, and cost driver analysis with a clear CDMO recommendation.
+
+- **Product Commercialization** — Guiding products from concept through market-ready launch — strategy, testing, documentation, and regulatory alignment.
+
+- **Digital Tools for Chemical Processes** — Helping companies identify, adopt, and apply digital and AI-powered tools for spectral analysis, formulation assistance, process optimization, and R&D workflow improvement. Tool-agnostic — we select what fits each client's workflow.
+
+- **AI Implementation for Scientific Workflows** — Practical integration of AI tools into R&D processes — literature review, documentation, process optimization, and laboratory productivity.
+
+- **Scientific Manuscript & Grant Support** — Pre-submission review of journal article manuscripts, grant applications, research proposals, conference abstracts, and thesis chapters. We evaluate hypothesis clarity, experimental design, results interpretation, and language. Particularly suited for early-career researchers and non-native English speakers.
+
+- **Scientific Career Coaching** — One-on-one career orientation for PhD students, postdocs, and early-career scientists at a crossroads. Honest guidance on academia vs. industry decisions, career pivots, and positioning. Where relevant, direct introductions from a global scientific network across chemistry, materials, life sciences, and biotech. Free intro call via Calendly or email.
 
 ## Quality Framework
 
@@ -27,21 +44,32 @@ MG Scientific Solutions operates under an **ISO 9001** quality management system
 
 ## Team
 
-- **Guillermo Ahumada, PhD** — Co-Founder. Dual PhD (University of Rennes, France + Pontificia Universidad Católica de Valparaíso, Chile). Expertise in chemistry, advanced materials, process development, and AI for scientific workflows.
-- **Magdalena Borkowska, PhD** — Co-Founder. PhD in biological sciences. Expertise in GMP manufacturing, cell and gene therapy, quality systems, and life sciences. Experience includes partnerships with Minaris and similar CDMO environments.
+- **Guillermo Ahumada, PhD** — Co-Founder. Dual PhD (Université de Rennes, France + Pontificia Universidad Católica de Valparaíso, Chile). Expertise in organic chemistry, advanced materials, process development, electrochemistry, CDMO management, AI for science, and scientific career coaching. Research experience across four continents (US, Chile, France, Sweden, South Korea). Active journal reviewer and editor.
+- **Magdalena Borkowska, PhD** — Co-Founder. PhD in biological sciences. Expertise in GMP manufacturing, cell and gene therapy, quality systems, nanomedicine, and life sciences. Experience includes partnerships with Minaris and CDMO environments in the US.
 
 ## Who We Serve
 
-- Specialty chemical and cosmetic ingredient importers bringing materials to the US market
+- Specialty chemical and cosmetic ingredient importers and distributors
 - Pharmaceutical and biotech companies requiring independent CDMO oversight
-- International manufacturers seeking US-standard third-party qualification
+- International manufacturers seeking US-standard third-party material qualification
+- Cosmetic brands and formulators developing or refining products
 - Startups and growth-stage companies needing fractional scientific leadership
+- Researchers and academics seeking pre-submission manuscript review or grant support
+- PhD students, postdocs, and early-career scientists seeking career orientation
 - Companies in North America, Latin America, Europe, and Asia
+
+## Engagement Models
+
+- Fixed-fee project pricing for well-defined scope
+- Monthly retainer for ongoing fractional or advisory work
+- Time and materials for exploratory or variable-scope projects
+- Payment terms: Net 30. Lab costs passed through at cost, itemized separately.
 
 ## Contact
 
 - Website: https://mgscientificsolutions.com
 - Email: info@mgscientificsolutions.com
+- Career Coaching: coaching@mgscientificsolutions.com
 - LinkedIn: https://www.linkedin.com/company/mg-scientific-solutions
 
 ## Pages
@@ -52,5 +80,6 @@ MG Scientific Solutions operates under an **ISO 9001** quality management system
 - [Quality Framework](https://mgscientificsolutions.com/quality.html)
 - [How We Work](https://mgscientificsolutions.com/how-we-work.html)
 - [FAQ](https://mgscientificsolutions.com/faq.html)
+- [Career Coaching](https://mgscientificsolutions.com/coaching.html)
 - [Careers](https://mgscientificsolutions.com/careers.html)
 - [Contact](https://mgscientificsolutions.com/contact.html)
